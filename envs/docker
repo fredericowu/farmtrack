@@ -1,0 +1,5 @@
+DB_PASSWORD=hackingrio
+DB_USER=hackingrio
+DB_NAME=hackingrio
+DB_HOST=mysql-hackingrio
+DB_PORT=3306

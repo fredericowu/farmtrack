@@ -19,6 +19,31 @@ services:
     networks:
       - hackingrio
 
+  plataforma:
+    build:
+      context: .
+      dockerfile: Dockerfiles/plataforma
+    container_name: plataforma
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mysql-hackingrio
+    networks:
+      - hackingrio
+
+#  nginx:
+#    image: nginx:latest
+#    container_name: nginx
+#    depends_on:
+#      - plataforma
+#    ports:
+#      - "80:80"
+#    networks:
+#      - hackingrio
+#    volumes:
+#      - ./nginx/conf.d:/etc/nginx/conf.d
+
+
 networks:
   hackingrio: {}
 

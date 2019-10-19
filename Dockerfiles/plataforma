@@ -1,0 +1,15 @@
+FROM python:alpine
+
+ENV PYTHONUNBUFFERED 1
+ENV C_FORCE_ROOT true
+ENV DJANGO_SETTINGS_MODULE hackingrio.settings
+ENV DJANGO_WSGI hackingrio.wsgi
+
+RUN mkdir /src
+RUN mkdir /venv
+COPY /envs/docker /.env
+COPY requirements.txt /requirements.txt
+COPY project/plataforma /src/
+COPY scripts /scripts
+RUN /scripts/build.sh
+CMD /scripts/plataforma_start.sh
