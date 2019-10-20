@@ -55,8 +55,20 @@ class Processo(models.Model):
     descricao = models.TextField(max_length=1024, blank=False, null=True, verbose_name="Descrição")
 
 
+    def get_metrica(self):
+        if self.pk:
+            metrica = Metrica.objects.filter(processos=self.pk)
+            if metrica:
+                return metrica[0]
+
     def __str__(self):
-        return self.nome
+        nome = self.nome
+        if self.pk:
+            metrica = Metrica.objects.filter(processos=self.pk)
+            if metrica:
+                nome = "{}/{}".format(metrica[0].nome, nome)
+
+        return nome
 
 
 class Lote(models.Model):

@@ -11,6 +11,7 @@ class Produtor(models.Model):
 
     nome = models.CharField(max_length=255, blank=False, null=True)
     tipo = models.IntegerField(choices=TIPO_PRODUTOR, default=None, blank=False)
+    descricao = models.TextField(max_length=1024, blank=True, null=True, verbose_name="Descrição")
     #produtos = models.ManyToManyField(
     #    "produto.Produto",
     #    blank=True,
