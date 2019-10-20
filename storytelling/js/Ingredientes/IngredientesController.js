@@ -24,12 +24,6 @@ const IngredientesController = (function(){
             }
         });
 
-        
-
-
-        
-
-
     }
     return {
         init : init

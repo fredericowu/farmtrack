@@ -18,6 +18,7 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls import url, include
 from rest_framework import routers, serializers, viewsets
+from api.views import Produtos, HistoricosLote
 
 
 admin.site.site_header = settings.ADMIN_SITE_HEADER
@@ -29,12 +30,15 @@ urlpatterns = [
 
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
+router.register(r'api/produtos', Produtos, basename="produtos")
+router.register(r'api/historicoslote', HistoricosLote, basename="historicoslote")
+
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
-    #url(r'^', include(router.urls)),
-#    url(r'^api/', include(apis.urlpatterns)),
+    url(r'^', include(router.urls)),
+    #url(r'^api/', include(api.urlpatterns)),
     url(r'^jet/', include('jet.urls', 'jet')),  # Django JET URLS
     url(r'^jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),  # Django JET dashboard URLS
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),

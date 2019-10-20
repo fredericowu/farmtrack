@@ -1,8 +1,8 @@
-const StorytellingTemplates = (function(){
+const StoryTellingTemplates = (function(){
     const step = function(obj){
         return `
         <div class="container d-flex align-items-center flex-column">
-            <img class="masthead-avatar mb-2 animated heartBeat" id="mainImage" src="${obj.mainImage}"  alt="" style="
+            <img class="masthead-avatar mb-2 animated heartBeat" id="mainImage" src="${obj.url_imagem}"  alt="" style="
                     background:  white;
                     border-radius: 50%;
                     width: 200px;
@@ -17,7 +17,6 @@ const StorytellingTemplates = (function(){
         </div>
         `;
     }
-
 
     return {
         step : step
