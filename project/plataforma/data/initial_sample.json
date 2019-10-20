@@ -1,2810 +1,2526 @@
 [
 {
-  "model": "dashboard.userdashboardmodule",
-  "pk": 1,
-  "fields": {
-    "title": "Quick links",
-    "module": "jet.dashboard.modules.LinkList",
-    "app_label": null,
-    "user": 1,
-    "column": 0,
-    "order": 0,
-    "settings": "{\"draggable\": false, \"deletable\": false, \"collapsible\": false, \"layout\": \"inline\"}",
-    "children": "[{\"title\": \"Return to site\", \"url\": \"/\"}, {\"title\": \"Alterar senha\", \"url\": \"/admin/password_change/\"}, {\"title\": \"Encerrar sess\\u00e3o\", \"url\": \"/admin/logout/\"}]",
-    "collapsed": false
-  }
-},
-{
-  "model": "dashboard.userdashboardmodule",
-  "pk": 2,
-  "fields": {
-    "title": "Aplica\u00e7\u00f5es",
-    "module": "jet.dashboard.modules.AppList",
-    "app_label": null,
-    "user": 1,
-    "column": 1,
-    "order": 0,
-    "settings": "{\"models\": null, \"exclude\": [\"auth.*\"]}",
-    "children": "",
-    "collapsed": false
-  }
-},
-{
-  "model": "dashboard.userdashboardmodule",
-  "pk": 3,
-  "fields": {
-    "title": "Administra\u00e7\u00e3o",
-    "module": "jet.dashboard.modules.AppList",
-    "app_label": null,
-    "user": 1,
-    "column": 2,
-    "order": 0,
-    "settings": "{\"models\": [\"auth.*\"], \"exclude\": null}",
-    "children": "",
-    "collapsed": false
-  }
-},
-{
-  "model": "dashboard.userdashboardmodule",
-  "pk": 4,
-  "fields": {
-    "title": "Recent Actions",
-    "module": "jet.dashboard.modules.RecentActions",
-    "app_label": null,
-    "user": 1,
-    "column": 0,
-    "order": 1,
-    "settings": "{\"limit\": 10, \"include_list\": null, \"exclude_list\": null, \"user\": null}",
-    "children": "",
-    "collapsed": false
-  }
-},
-{
-  "model": "dashboard.userdashboardmodule",
-  "pk": 5,
-  "fields": {
-    "title": "Latest Django News",
-    "module": "jet.dashboard.modules.Feed",
-    "app_label": null,
-    "user": 1,
-    "column": 1,
-    "order": 1,
-    "settings": "{\"feed_url\": \"http://www.djangoproject.com/rss/weblog/\", \"limit\": 5}",
-    "children": "",
-    "collapsed": false
-  }
-},
-{
-  "model": "dashboard.userdashboardmodule",
-  "pk": 6,
-  "fields": {
-    "title": "Support",
-    "module": "jet.dashboard.modules.LinkList",
-    "app_label": null,
-    "user": 1,
-    "column": 2,
-    "order": 1,
-    "settings": "{\"draggable\": true, \"deletable\": true, \"collapsible\": true, \"layout\": \"stacked\"}",
-    "children": "[{\"title\": \"Django documentation\", \"url\": \"http://docs.djangoproject.com/\", \"external\": true}, {\"title\": \"Django \\\"django-users\\\" mailing list\", \"url\": \"http://groups.google.com/group/django-users\", \"external\": true}, {\"title\": \"Django irc channel\", \"url\": \"irc://irc.freenode.net/django\", \"external\": true}]",
-    "collapsed": false
-  }
-},
-{
-  "model": "dashboard.userdashboardmodule",
-  "pk": 7,
-  "fields": {
-    "title": "Application models",
-    "module": "jet.dashboard.modules.ModelList",
-    "app_label": "badge",
-    "user": 1,
-    "column": 0,
-    "order": 0,
-    "settings": "{\"models\": [\"badge.*\"], \"exclude\": null}",
-    "children": "",
-    "collapsed": false
-  }
-},
-{
-  "model": "dashboard.userdashboardmodule",
-  "pk": 8,
-  "fields": {
-    "title": "Recent Actions",
-    "module": "jet.dashboard.modules.RecentActions",
-    "app_label": "badge",
-    "user": 1,
-    "column": 1,
-    "order": 0,
-    "settings": "{\"limit\": 10, \"include_list\": [\"badge.*\"], \"exclude_list\": null, \"user\": null}",
-    "children": "",
-    "collapsed": false
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 1,
-  "fields": {
-    "app_label": "dashboard",
-    "model": "userdashboardmodule"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 2,
-  "fields": {
-    "app_label": "jet",
-    "model": "bookmark"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 3,
-  "fields": {
-    "app_label": "jet",
-    "model": "pinnedapplication"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 4,
-  "fields": {
-    "app_label": "admin",
-    "model": "logentry"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 5,
-  "fields": {
-    "app_label": "auth",
-    "model": "permission"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 6,
-  "fields": {
-    "app_label": "auth",
-    "model": "group"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 7,
-  "fields": {
-    "app_label": "auth",
-    "model": "user"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 8,
-  "fields": {
-    "app_label": "contenttypes",
-    "model": "contenttype"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 9,
-  "fields": {
-    "app_label": "sessions",
-    "model": "session"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 10,
-  "fields": {
-    "app_label": "produto",
-    "model": "produto"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 11,
-  "fields": {
-    "app_label": "produto",
-    "model": "etapapreparacao"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 12,
-  "fields": {
-    "app_label": "produto",
-    "model": "caracteristicaetapa"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 13,
-  "fields": {
-    "app_label": "produtor",
-    "model": "produtor"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 14,
-  "fields": {
-    "app_label": "produtor",
-    "model": "local"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 15,
-  "fields": {
-    "app_label": "badge",
-    "model": "badge"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 16,
-  "fields": {
-    "app_label": "produto",
-    "model": "metrica"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 17,
-  "fields": {
-    "app_label": "produto",
-    "model": "processo"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 18,
-  "fields": {
-    "app_label": "produto",
-    "model": "lote"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 19,
-  "fields": {
-    "app_label": "produto",
-    "model": "historicolote"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "f3e0m8f3pjlywvuv1ssppc477tgnnhi8",
-  "fields": {
-    "session_data": "M2FjMzhiMmNkMDlkOWIzM2U1ODliMmU2OWU0OTI1NDIxOTc3ZDFmNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJkNTMyZDQwMWQ1OWJlYmY0MWY3NTdkNDNlYjljYWVhNmE3Y2RiNDU5In0=",
-    "expire_date": "2019-11-02T23:42:15.663Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "jmjkbwrqoo351so9onr5s301yhwmdio3",
-  "fields": {
-    "session_data": "M2FjMzhiMmNkMDlkOWIzM2U1ODliMmU2OWU0OTI1NDIxOTc3ZDFmNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJkNTMyZDQwMWQ1OWJlYmY0MWY3NTdkNDNlYjljYWVhNmE3Y2RiNDU5In0=",
-    "expire_date": "2019-11-02T15:04:39.824Z"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "x7ibcbsqck7disxznda1x71erbo7xxfu",
-  "fields": {
-    "session_data": "M2FjMzhiMmNkMDlkOWIzM2U1ODliMmU2OWU0OTI1NDIxOTc3ZDFmNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJkNTMyZDQwMWQ1OWJlYmY0MWY3NTdkNDNlYjljYWVhNmE3Y2RiNDU5In0=",
-    "expire_date": "2019-11-03T01:08:25.522Z"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 1,
-  "fields": {
-    "nome": "Recebimento",
-    "descricao": "Recebimento"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 2,
-  "fields": {
-    "nome": "Polpa Concentrada em latas",
-    "descricao": "Polpa Concentrada em latas"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 3,
-  "fields": {
-    "nome": "Tritura\u00e7\u00e3o",
-    "descricao": "Tritura\u00e7\u00e3o"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 4,
-  "fields": {
-    "nome": "Holding",
-    "descricao": "Holding"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 5,
-  "fields": {
-    "nome": "Fechamento",
-    "descricao": "Fechamento"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 6,
-  "fields": {
-    "nome": "Enchimento a quente de tambores",
-    "descricao": "Enchimento a quente de tambores"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 7,
-  "fields": {
-    "nome": "Suco",
-    "descricao": "Suco"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 8,
-  "fields": {
-    "nome": "Reservat\u00f3rio",
-    "descricao": "Reservat\u00f3rio"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 9,
-  "fields": {
-    "nome": "Refina\u00e7\u00e3o",
-    "descricao": "Refina\u00e7\u00e3o"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 10,
-  "fields": {
-    "nome": "Sele\u00e7\u00e3o",
-    "descricao": "Sele\u00e7\u00e3o"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 11,
-  "fields": {
-    "nome": "Despolpamento e refina\u00e7\u00e3o",
-    "descricao": "Despolpamento e refina\u00e7\u00e3o"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 12,
-  "fields": {
-    "nome": "Evapora\u00e7\u00e3o (concentra\u00e7\u00e3o)",
-    "descricao": "Evapora\u00e7\u00e3o (concentra\u00e7\u00e3o)"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 13,
-  "fields": {
-    "nome": "Lavagem",
-    "descricao": "Lavagem"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 14,
-  "fields": {
-    "nome": "Resfriamento Rotativo",
-    "descricao": "Resfriamento Rotativo"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 15,
-  "fields": {
-    "nome": "Tomate",
-    "descricao": "Tomate"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 16,
-  "fields": {
-    "nome": "Pasteuriza\u00e7\u00e3o",
-    "descricao": "Pasteuriza\u00e7\u00e3o"
-  }
-},
-{
-  "model": "produto.processo",
-  "pk": 17,
-  "fields": {
-    "nome": "Tratamento T\u00e9rmico",
-    "descricao": "Tratamento T\u00e9rmico"
-  }
-},
-{
-  "model": "produtor.local",
-  "pk": 1,
-  "fields": {
-    "nome": "Spoleto Rio Branco",
-    "endereco": "end",
-    "produtor": 1
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 1,
-  "fields": {
-    "name": "Can add user dashboard module",
-    "content_type": 1,
-    "codename": "add_userdashboardmodule"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 2,
-  "fields": {
-    "name": "Can change user dashboard module",
-    "content_type": 1,
-    "codename": "change_userdashboardmodule"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 3,
-  "fields": {
-    "name": "Can delete user dashboard module",
-    "content_type": 1,
-    "codename": "delete_userdashboardmodule"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 4,
-  "fields": {
-    "name": "Can view user dashboard module",
-    "content_type": 1,
-    "codename": "view_userdashboardmodule"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 5,
-  "fields": {
-    "name": "Can add bookmark",
-    "content_type": 2,
-    "codename": "add_bookmark"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 6,
-  "fields": {
-    "name": "Can change bookmark",
-    "content_type": 2,
-    "codename": "change_bookmark"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 7,
-  "fields": {
-    "name": "Can delete bookmark",
-    "content_type": 2,
-    "codename": "delete_bookmark"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 8,
-  "fields": {
-    "name": "Can view bookmark",
-    "content_type": 2,
-    "codename": "view_bookmark"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 9,
-  "fields": {
-    "name": "Can add pinned application",
-    "content_type": 3,
-    "codename": "add_pinnedapplication"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 10,
-  "fields": {
-    "name": "Can change pinned application",
-    "content_type": 3,
-    "codename": "change_pinnedapplication"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 11,
-  "fields": {
-    "name": "Can delete pinned application",
-    "content_type": 3,
-    "codename": "delete_pinnedapplication"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 12,
-  "fields": {
-    "name": "Can view pinned application",
-    "content_type": 3,
-    "codename": "view_pinnedapplication"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 13,
-  "fields": {
-    "name": "Can add log entry",
-    "content_type": 4,
-    "codename": "add_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 14,
-  "fields": {
-    "name": "Can change log entry",
-    "content_type": 4,
-    "codename": "change_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 15,
-  "fields": {
-    "name": "Can delete log entry",
-    "content_type": 4,
-    "codename": "delete_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 16,
-  "fields": {
-    "name": "Can view log entry",
-    "content_type": 4,
-    "codename": "view_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 17,
-  "fields": {
-    "name": "Can add permission",
-    "content_type": 5,
-    "codename": "add_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 18,
-  "fields": {
-    "name": "Can change permission",
-    "content_type": 5,
-    "codename": "change_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 19,
-  "fields": {
-    "name": "Can delete permission",
-    "content_type": 5,
-    "codename": "delete_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 20,
-  "fields": {
-    "name": "Can view permission",
-    "content_type": 5,
-    "codename": "view_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 21,
-  "fields": {
-    "name": "Can add group",
-    "content_type": 6,
-    "codename": "add_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 22,
-  "fields": {
-    "name": "Can change group",
-    "content_type": 6,
-    "codename": "change_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 23,
-  "fields": {
-    "name": "Can delete group",
-    "content_type": 6,
-    "codename": "delete_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 24,
-  "fields": {
-    "name": "Can view group",
-    "content_type": 6,
-    "codename": "view_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 25,
-  "fields": {
-    "name": "Can add user",
-    "content_type": 7,
-    "codename": "add_user"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 26,
-  "fields": {
-    "name": "Can change user",
-    "content_type": 7,
-    "codename": "change_user"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 27,
-  "fields": {
-    "name": "Can delete user",
-    "content_type": 7,
-    "codename": "delete_user"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 28,
-  "fields": {
-    "name": "Can view user",
-    "content_type": 7,
-    "codename": "view_user"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 29,
-  "fields": {
-    "name": "Can add content type",
-    "content_type": 8,
-    "codename": "add_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 30,
-  "fields": {
-    "name": "Can change content type",
-    "content_type": 8,
-    "codename": "change_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 31,
-  "fields": {
-    "name": "Can delete content type",
-    "content_type": 8,
-    "codename": "delete_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 32,
-  "fields": {
-    "name": "Can view content type",
-    "content_type": 8,
-    "codename": "view_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 33,
-  "fields": {
-    "name": "Can add session",
-    "content_type": 9,
-    "codename": "add_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 34,
-  "fields": {
-    "name": "Can change session",
-    "content_type": 9,
-    "codename": "change_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 35,
-  "fields": {
-    "name": "Can delete session",
-    "content_type": 9,
-    "codename": "delete_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 36,
-  "fields": {
-    "name": "Can view session",
-    "content_type": 9,
-    "codename": "view_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 37,
-  "fields": {
-    "name": "Can add produto",
-    "content_type": 10,
-    "codename": "add_produto"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 38,
-  "fields": {
-    "name": "Can change produto",
-    "content_type": 10,
-    "codename": "change_produto"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 39,
-  "fields": {
-    "name": "Can delete produto",
-    "content_type": 10,
-    "codename": "delete_produto"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 40,
-  "fields": {
-    "name": "Can view produto",
-    "content_type": 10,
-    "codename": "view_produto"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 41,
-  "fields": {
-    "name": "Can add etapa preparacao",
-    "content_type": 11,
-    "codename": "add_etapapreparacao"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 42,
-  "fields": {
-    "name": "Can change etapa preparacao",
-    "content_type": 11,
-    "codename": "change_etapapreparacao"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 43,
-  "fields": {
-    "name": "Can delete etapa preparacao",
-    "content_type": 11,
-    "codename": "delete_etapapreparacao"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 44,
-  "fields": {
-    "name": "Can view etapa preparacao",
-    "content_type": 11,
-    "codename": "view_etapapreparacao"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 45,
-  "fields": {
-    "name": "Can add caracteristica etapa",
-    "content_type": 12,
-    "codename": "add_caracteristicaetapa"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 46,
-  "fields": {
-    "name": "Can change caracteristica etapa",
-    "content_type": 12,
-    "codename": "change_caracteristicaetapa"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 47,
-  "fields": {
-    "name": "Can delete caracteristica etapa",
-    "content_type": 12,
-    "codename": "delete_caracteristicaetapa"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 48,
-  "fields": {
-    "name": "Can view caracteristica etapa",
-    "content_type": 12,
-    "codename": "view_caracteristicaetapa"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 49,
-  "fields": {
-    "name": "Can add produtor",
-    "content_type": 13,
-    "codename": "add_produtor"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 50,
-  "fields": {
-    "name": "Can change produtor",
-    "content_type": 13,
-    "codename": "change_produtor"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 51,
-  "fields": {
-    "name": "Can delete produtor",
-    "content_type": 13,
-    "codename": "delete_produtor"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 52,
-  "fields": {
-    "name": "Can view produtor",
-    "content_type": 13,
-    "codename": "view_produtor"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 53,
-  "fields": {
-    "name": "Can add local",
-    "content_type": 14,
-    "codename": "add_local"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 54,
-  "fields": {
-    "name": "Can change local",
-    "content_type": 14,
-    "codename": "change_local"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 55,
-  "fields": {
-    "name": "Can delete local",
-    "content_type": 14,
-    "codename": "delete_local"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 56,
-  "fields": {
-    "name": "Can view local",
-    "content_type": 14,
-    "codename": "view_local"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 57,
-  "fields": {
-    "name": "Can add badge",
-    "content_type": 15,
-    "codename": "add_badge"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 58,
-  "fields": {
-    "name": "Can change badge",
-    "content_type": 15,
-    "codename": "change_badge"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 59,
-  "fields": {
-    "name": "Can delete badge",
-    "content_type": 15,
-    "codename": "delete_badge"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 60,
-  "fields": {
-    "name": "Can view badge",
-    "content_type": 15,
-    "codename": "view_badge"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 61,
-  "fields": {
-    "name": "Can add M\u00e9trica",
-    "content_type": 16,
-    "codename": "add_metrica"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 62,
-  "fields": {
-    "name": "Can change M\u00e9trica",
-    "content_type": 16,
-    "codename": "change_metrica"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 63,
-  "fields": {
-    "name": "Can delete M\u00e9trica",
-    "content_type": 16,
-    "codename": "delete_metrica"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 64,
-  "fields": {
-    "name": "Can view M\u00e9trica",
-    "content_type": 16,
-    "codename": "view_metrica"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 65,
-  "fields": {
-    "name": "Can add Caracter\u00edstica da Etapa",
-    "content_type": 17,
-    "codename": "add_processo"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 66,
-  "fields": {
-    "name": "Can change Caracter\u00edstica da Etapa",
-    "content_type": 17,
-    "codename": "change_processo"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 67,
-  "fields": {
-    "name": "Can delete Caracter\u00edstica da Etapa",
-    "content_type": 17,
-    "codename": "delete_processo"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 68,
-  "fields": {
-    "name": "Can view Caracter\u00edstica da Etapa",
-    "content_type": 17,
-    "codename": "view_processo"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 69,
-  "fields": {
-    "name": "Can add lote",
-    "content_type": 18,
-    "codename": "add_lote"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 70,
-  "fields": {
-    "name": "Can change lote",
-    "content_type": 18,
-    "codename": "change_lote"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 71,
-  "fields": {
-    "name": "Can delete lote",
-    "content_type": 18,
-    "codename": "delete_lote"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 72,
-  "fields": {
-    "name": "Can view lote",
-    "content_type": 18,
-    "codename": "view_lote"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 73,
-  "fields": {
-    "name": "Can add historico lote",
-    "content_type": 19,
-    "codename": "add_historicolote"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 74,
-  "fields": {
-    "name": "Can change historico lote",
-    "content_type": 19,
-    "codename": "change_historicolote"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 75,
-  "fields": {
-    "name": "Can delete historico lote",
-    "content_type": 19,
-    "codename": "delete_historicolote"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 76,
-  "fields": {
-    "name": "Can view historico lote",
-    "content_type": 19,
-    "codename": "view_historicolote"
-  }
-},
-{
-  "model": "auth.user",
-  "pk": 1,
-  "fields": {
-    "password": "pbkdf2_sha256$150000$GSmoV8xz0cpp$GA25fAe+LJvKPZ3ohuF0V84x2V7J0JyxBLgUEJ05FiE=",
-    "last_login": "2019-10-20T01:08:25.517Z",
-    "is_superuser": true,
-    "username": "admin",
-    "first_name": "",
-    "last_name": "",
-    "email": "admin@admin.com",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2019-10-19T15:04:34.381Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "produto.produto",
-  "pk": 3,
-  "fields": {
-    "nome": "Massa Industrial",
-    "descricao": "Massa processada industrialmente",
-    "url_imagem": null,
-    "produtor": 2,
-    "user": 1,
-    "metricas": []
-  }
-},
-{
-  "model": "produto.produto",
-  "pk": 4,
-  "fields": {
-    "nome": "Trigo do Campo",
-    "descricao": "Melhor trigo",
-    "url_imagem": null,
-    "produtor": 3,
-    "user": 1,
-    "metricas": []
-  }
-},
-{
-  "model": "produto.produto",
-  "pk": 5,
-  "fields": {
-    "nome": "Carne",
-    "descricao": "",
-    "url_imagem": null,
-    "produtor": 4,
-    "user": 1,
-    "metricas": [
-      1,
-      2,
-      3,
-      4
-    ]
-  }
-},
-{
-  "model": "produto.produto",
-  "pk": 6,
-  "fields": {
-    "nome": "Faffale ao molho de tomate",
-    "descricao": "",
-    "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571526762/mainImages/macarrao_djdfzk.jpg",
-    "produtor": 1,
-    "user": 1,
-    "metricas": []
-  }
-},
-{
-  "model": "produto.produto",
-  "pk": 8,
-  "fields": {
-    "nome": "Molho Pesto",
-    "descricao": "",
-    "url_imagem": null,
-    "produtor": 2,
-    "user": 1,
-    "metricas": []
-  }
-},
-{
-  "model": "produto.produto",
-  "pk": 9,
-  "fields": {
-    "nome": "Salada de Alface Crespa, Alface Roxa e R\u00facula",
-    "descricao": "",
-    "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571526762/mainImages/salada_skm3vw.jpg",
-    "produtor": 1,
-    "user": 1,
-    "metricas": []
-  }
-},
-{
-  "model": "produto.produto",
-  "pk": 10,
-  "fields": {
-    "nome": "Molho de Tomate",
-    "descricao": "",
-    "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571501429/mainImages/tomato-sauce_3_vmzpv6.png",
-    "produtor": 3,
-    "user": 1,
-    "metricas": [
-      1,
-      2,
-      3,
-      4
-    ]
-  }
-},
-{
-  "model": "produto.produto",
-  "pk": 11,
-  "fields": {
-    "nome": "Farffale",
-    "descricao": "",
-    "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571501429/mainImages/tomato-sauce_3_vmzpv6.png",
-    "produtor": 4,
-    "user": 1,
-    "metricas": [
-      1,
-      2,
-      3,
-      4
-    ]
-  }
-},
-{
-  "model": "produto.metrica",
-  "pk": 1,
-  "fields": {
-    "nome": "Apresenta\u00e7\u00e3o",
-    "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571528205/mainImages/thinking_tt05fr.png",
-    "user": 1,
-    "processos": [
-      1,
-      2,
-      3,
-      4
-    ]
-  }
-},
-{
-  "model": "produto.metrica",
-  "pk": 2,
-  "fields": {
-    "nome": "Sabor",
-    "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571528329/mainImages/in-love_tytozp.png",
-    "user": 1,
-    "processos": [
-      5,
-      6,
-      7,
-      8,
-      9
-    ]
-  }
-},
-{
-  "model": "produto.metrica",
-  "pk": 3,
-  "fields": {
-    "nome": "Nutri\u00e7\u00e3o",
-    "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571528199/mainImages/strong_udlbbk.png",
-    "user": 1,
-    "processos": [
-      10,
-      11,
-      12
-    ]
-  }
-},
-{
-  "model": "produto.metrica",
-  "pk": 4,
-  "fields": {
-    "nome": "Higiene",
-    "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571528329/mainImages/in-love_tytozp.png",
-    "user": 1,
-    "processos": [
-      13,
-      14,
-      15,
-      16,
-      17
-    ]
-  }
-},
-{
-  "model": "produto.lote",
-  "pk": 1,
-  "fields": {
-    "nome": "Lote A Penne",
-    "data": "2019-10-31",
-    "produto": null,
-    "user": 1,
-    "composto": [
-      2,
-      3
-    ]
-  }
-},
-{
-  "model": "produto.lote",
-  "pk": 2,
-  "fields": {
-    "nome": "Lote A Trigo",
-    "data": "2019-10-19",
-    "produto": 4,
-    "user": 1,
-    "composto": []
-  }
-},
-{
-  "model": "produto.lote",
-  "pk": 3,
-  "fields": {
-    "nome": "Lote A Molho Pesto",
-    "data": "2019-10-20",
-    "produto": 8,
-    "user": 1,
-    "composto": []
-  }
-},
-{
-  "model": "produto.lote",
-  "pk": 4,
-  "fields": {
-    "nome": "Lote A Farffale ao molho de tomate",
-    "data": "2019-10-20",
-    "produto": 6,
-    "user": 1,
-    "composto": [
-      5,
-      6
-    ]
-  }
-},
-{
-  "model": "produto.lote",
-  "pk": 5,
-  "fields": {
-    "nome": "Lote A Molho de Tomate",
-    "data": "2019-10-20",
-    "produto": 10,
-    "user": 1,
-    "composto": []
-  }
-},
-{
-  "model": "produto.lote",
-  "pk": 6,
-  "fields": {
-    "nome": "Lote A Farffale",
-    "data": "2019-10-20",
-    "produto": 11,
-    "user": 1,
-    "composto": []
-  }
-},
-{
-  "model": "produto.historicolote",
-  "pk": 2,
-  "fields": {
-    "lote": 2,
-    "processo": 1,
-    "data": "2019-10-22",
-    "user": 1
-  }
-},
-{
-  "model": "produto.historicolote",
-  "pk": 3,
-  "fields": {
-    "lote": 2,
-    "processo": 3,
-    "data": "2019-10-10",
-    "user": 1
-  }
-},
-{
-  "model": "produto.historicolote",
-  "pk": 4,
-  "fields": {
-    "lote": 5,
-    "processo": 1,
-    "data": "2019-10-20",
-    "user": 1
-  }
-},
-{
-  "model": "produto.historicolote",
-  "pk": 5,
-  "fields": {
-    "lote": 5,
-    "processo": 5,
-    "data": "2019-10-20",
-    "user": 1
-  }
-},
-{
-  "model": "produto.historicolote",
-  "pk": 6,
-  "fields": {
-    "lote": 5,
-    "processo": 10,
-    "data": "2019-10-20",
-    "user": 1
-  }
-},
-{
-  "model": "produto.historicolote",
-  "pk": 7,
-  "fields": {
-    "lote": 5,
-    "processo": 15,
-    "data": "2019-10-20",
-    "user": 1
-  }
-},
-{
-  "model": "produto.historicolote",
-  "pk": 8,
-  "fields": {
-    "lote": 6,
-    "processo": 1,
-    "data": "2019-10-20",
-    "user": 1
-  }
-},
-{
-  "model": "produto.historicolote",
-  "pk": 9,
-  "fields": {
-    "lote": 6,
-    "processo": 5,
-    "data": "2019-10-20",
-    "user": 1
-  }
-},
-{
-  "model": "produto.historicolote",
-  "pk": 10,
-  "fields": {
-    "lote": 6,
-    "processo": 7,
-    "data": "2019-10-20",
-    "user": 1
-  }
-},
-{
-  "model": "produto.historicolote",
-  "pk": 11,
-  "fields": {
-    "lote": 6,
-    "processo": 10,
-    "data": "2019-10-21",
-    "user": 1
-  }
-},
-{
-  "model": "produto.historicolote",
-  "pk": 12,
-  "fields": {
-    "lote": 6,
-    "processo": 3,
-    "data": "2019-10-20",
-    "user": 1
-  }
-},
-{
-  "model": "produto.historicolote",
-  "pk": 13,
-  "fields": {
-    "lote": 5,
-    "processo": 4,
-    "data": "2019-10-20",
-    "user": 1
-  }
-},
-{
-  "model": "produtor.produtor",
-  "pk": 1,
-  "fields": {
-    "nome": "Spoleto",
-    "tipo": 30,
-    "descricao": null,
-    "user": 1
-  }
-},
-{
-  "model": "produtor.produtor",
-  "pk": 2,
-  "fields": {
-    "nome": "Grupo Trigo",
-    "tipo": 20,
-    "descricao": null,
-    "user": 1
-  }
-},
-{
-  "model": "produtor.produtor",
-  "pk": 3,
-  "fields": {
-    "nome": "Fazenda Jos\u00e9",
-    "tipo": 10,
-    "descricao": "Descri\u00e7\u00e3o da fazenda do Jos\u00e9",
-    "user": 1
-  }
-},
-{
-  "model": "produtor.produtor",
-  "pk": 4,
-  "fields": {
-    "nome": "Fazenda do Jo\u00e3o",
-    "tipo": 10,
-    "descricao": "Descri\u00e7\u00e3o da fazenda do Jo\u00e3o",
-    "user": 1
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 1,
-  "fields": {
-    "action_time": "2019-10-19T17:23:19.480Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "1",
-    "object_repr": "Massa",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 2,
-  "fields": {
-    "action_time": "2019-10-19T17:23:44.015Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "2",
-    "object_repr": "Penne ao pesto",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 3,
-  "fields": {
-    "action_time": "2019-10-19T17:24:49.057Z",
-    "user": 1,
-    "content_type": 13,
-    "object_id": "1",
-    "object_repr": "Spoleto",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 4,
-  "fields": {
-    "action_time": "2019-10-19T17:25:13.194Z",
-    "user": 1,
-    "content_type": 13,
-    "object_id": "2",
-    "object_repr": "Grupo Trigo",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 5,
-  "fields": {
-    "action_time": "2019-10-19T17:26:09.302Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "3",
-    "object_repr": "Massa Industrial",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 6,
-  "fields": {
-    "action_time": "2019-10-19T17:26:11.655Z",
-    "user": 1,
-    "content_type": 13,
-    "object_id": "2",
-    "object_repr": "Grupo Trigo",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"produtos\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 7,
-  "fields": {
-    "action_time": "2019-10-19T17:27:13.166Z",
-    "user": 1,
-    "content_type": 13,
-    "object_id": "3",
-    "object_repr": "Trigo do Campo",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 8,
-  "fields": {
-    "action_time": "2019-10-19T17:27:46.865Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "4",
-    "object_repr": "Trigo do Campo",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 9,
-  "fields": {
-    "action_time": "2019-10-19T17:27:48.708Z",
-    "user": 1,
-    "content_type": 13,
-    "object_id": "3",
-    "object_repr": "Fazenda Jos\u00e9",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"nome\", \"produtos\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 10,
-  "fields": {
-    "action_time": "2019-10-19T17:28:44.023Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "1",
-    "object_repr": "Massa",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"composicao\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 11,
-  "fields": {
-    "action_time": "2019-10-19T17:29:04.900Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "3",
-    "object_repr": "Massa Industrial",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"composicao\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 12,
-  "fields": {
-    "action_time": "2019-10-19T17:29:16.666Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "1",
-    "object_repr": "Massa",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 13,
-  "fields": {
-    "action_time": "2019-10-19T17:29:25.850Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "2",
-    "object_repr": "Penne ao pesto",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"composicao\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 14,
-  "fields": {
-    "action_time": "2019-10-19T17:53:20.286Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "4",
-    "object_repr": "Trigo do Campo - Fazenda Jos\u00e9",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"produtor\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 15,
-  "fields": {
-    "action_time": "2019-10-19T17:53:26.941Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "3",
-    "object_repr": "Massa Industrial - Grupo Trigo",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"produtor\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 16,
-  "fields": {
-    "action_time": "2019-10-19T17:53:45.498Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "2",
-    "object_repr": "Penne ao pesto - Spoleto",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"produtor\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 17,
-  "fields": {
-    "action_time": "2019-10-19T18:01:00.461Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "1",
-    "object_repr": "Spoleto Rio Branco - Spoleto",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 18,
-  "fields": {
-    "action_time": "2019-10-19T18:05:07.699Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "1",
-    "object_repr": "Plantado a mao",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 19,
-  "fields": {
-    "action_time": "2019-10-19T18:09:05.048Z",
-    "user": 1,
-    "content_type": 11,
-    "object_id": "1",
-    "object_repr": "Planta\u00e7\u00e3o",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 20,
-  "fields": {
-    "action_time": "2019-10-19T18:19:38.180Z",
-    "user": 1,
-    "content_type": 13,
-    "object_id": "4",
-    "object_repr": "Fazenda do Jo\u00e3o",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 21,
-  "fields": {
-    "action_time": "2019-10-19T18:19:42.840Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "5",
-    "object_repr": "Carne - Fazenda do Jo\u00e3o",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 22,
-  "fields": {
-    "action_time": "2019-10-19T18:19:49.308Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "6",
-    "object_repr": "Bife Acebolado - Spoleto",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 23,
-  "fields": {
-    "action_time": "2019-10-19T18:23:38.724Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "1",
-    "object_repr": "Recebimento",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 24,
-  "fields": {
-    "action_time": "2019-10-19T18:24:15.726Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "2",
-    "object_repr": "Polpa Concentrada em latas",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 25,
-  "fields": {
-    "action_time": "2019-10-19T18:24:24.370Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "3",
-    "object_repr": "Tritura\u00e7\u00e3o",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 26,
-  "fields": {
-    "action_time": "2019-10-19T18:24:33.521Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "4",
-    "object_repr": "Holding",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 27,
-  "fields": {
-    "action_time": "2019-10-19T18:24:36.459Z",
-    "user": 1,
-    "content_type": 16,
-    "object_id": "1",
-    "object_repr": "Apresenta\u00e7\u00e3o",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 28,
-  "fields": {
-    "action_time": "2019-10-19T18:24:41.182Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "5",
-    "object_repr": "Carne - Fazenda do Jo\u00e3o",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"metricas\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 29,
-  "fields": {
-    "action_time": "2019-10-19T18:25:16.473Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "5",
-    "object_repr": "Fechamento",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 30,
-  "fields": {
-    "action_time": "2019-10-19T18:25:33.974Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "6",
-    "object_repr": "Enchimento a quente de tambores",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 31,
-  "fields": {
-    "action_time": "2019-10-19T18:25:44.245Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "7",
-    "object_repr": "Suco",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 32,
-  "fields": {
-    "action_time": "2019-10-19T18:25:56.736Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "8",
-    "object_repr": "Reservat\u00f3rio",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 33,
-  "fields": {
-    "action_time": "2019-10-19T18:26:09.681Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "9",
-    "object_repr": "Refina\u00e7\u00e3o",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 34,
-  "fields": {
-    "action_time": "2019-10-19T18:26:25.003Z",
-    "user": 1,
-    "content_type": 16,
-    "object_id": "2",
-    "object_repr": "Sabor",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 35,
-  "fields": {
-    "action_time": "2019-10-19T18:26:28.206Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "5",
-    "object_repr": "Carne - Fazenda do Jo\u00e3o",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"metricas\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 36,
-  "fields": {
-    "action_time": "2019-10-19T18:26:50.652Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "10",
-    "object_repr": "Sele\u00e7\u00e3o",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 37,
-  "fields": {
-    "action_time": "2019-10-19T18:27:04.780Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "11",
-    "object_repr": "Despolpamento e refina\u00e7\u00e3o",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 38,
-  "fields": {
-    "action_time": "2019-10-19T18:27:18.405Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "12",
-    "object_repr": "Evapora\u00e7\u00e3o (concentra\u00e7\u00e3o)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 39,
-  "fields": {
-    "action_time": "2019-10-19T18:27:19.606Z",
-    "user": 1,
-    "content_type": 16,
-    "object_id": "3",
-    "object_repr": "Nutri\u00e7\u00e3o",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 40,
-  "fields": {
-    "action_time": "2019-10-19T18:27:21.711Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "5",
-    "object_repr": "Carne - Fazenda do Jo\u00e3o",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"metricas\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 41,
-  "fields": {
-    "action_time": "2019-10-19T18:27:45.569Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "13",
-    "object_repr": "Lavagem",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 42,
-  "fields": {
-    "action_time": "2019-10-19T18:28:01.293Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "14",
-    "object_repr": "Resfriamento Rotativo",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 43,
-  "fields": {
-    "action_time": "2019-10-19T18:28:10.252Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "15",
-    "object_repr": "Tomate",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 44,
-  "fields": {
-    "action_time": "2019-10-19T18:28:29.221Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "16",
-    "object_repr": "Pasteuriza\u00e7\u00e3o",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 45,
-  "fields": {
-    "action_time": "2019-10-19T18:28:45.333Z",
-    "user": 1,
-    "content_type": 17,
-    "object_id": "17",
-    "object_repr": "Tratamento T\u00e9rmico",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 46,
-  "fields": {
-    "action_time": "2019-10-19T18:28:46.464Z",
-    "user": 1,
-    "content_type": 16,
-    "object_id": "4",
-    "object_repr": "Higiene",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 47,
-  "fields": {
-    "action_time": "2019-10-19T18:28:47.545Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "5",
-    "object_repr": "Carne - Fazenda do Jo\u00e3o",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"metricas\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 48,
-  "fields": {
-    "action_time": "2019-10-19T18:32:38.511Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "7",
-    "object_repr": "teste - Spoleto",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 49,
-  "fields": {
-    "action_time": "2019-10-19T18:32:44.193Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "7",
-    "object_repr": "teste - Spoleto",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 50,
-  "fields": {
-    "action_time": "2019-10-19T19:11:08.510Z",
-    "user": 1,
-    "content_type": 18,
-    "object_id": "1",
-    "object_repr": "Lote A",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 51,
-  "fields": {
-    "action_time": "2019-10-19T19:51:33.219Z",
-    "user": 1,
-    "content_type": 18,
-    "object_id": "1",
-    "object_repr": "Lote A Penne",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"nome\", \"produto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 52,
-  "fields": {
-    "action_time": "2019-10-19T19:54:46.206Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "2",
-    "object_repr": "Penne ao pesto - Spoleto",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"composicao\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 53,
-  "fields": {
-    "action_time": "2019-10-19T19:59:00.812Z",
-    "user": 1,
-    "content_type": 18,
-    "object_id": "2",
-    "object_repr": "Lote A Trigo",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 54,
-  "fields": {
-    "action_time": "2019-10-19T19:59:06.638Z",
-    "user": 1,
-    "content_type": 18,
-    "object_id": "1",
-    "object_repr": "Lote A Penne",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 55,
-  "fields": {
-    "action_time": "2019-10-19T19:59:32.619Z",
-    "user": 1,
-    "content_type": 18,
-    "object_id": "1",
-    "object_repr": "Lote A Penne",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"composto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 56,
-  "fields": {
-    "action_time": "2019-10-19T20:37:55.095Z",
-    "user": 1,
-    "content_type": 18,
-    "object_id": "1",
-    "object_repr": "Lote A Penne",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"composto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 57,
-  "fields": {
-    "action_time": "2019-10-19T20:40:30.282Z",
-    "user": 1,
-    "content_type": 18,
-    "object_id": "1",
-    "object_repr": "Lote A Penne",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"composto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 58,
-  "fields": {
-    "action_time": "2019-10-19T21:03:57.834Z",
-    "user": 1,
-    "content_type": 19,
-    "object_id": "2",
-    "object_repr": "Lote A Trigo - Recebimento",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 59,
-  "fields": {
-    "action_time": "2019-10-19T21:09:02.247Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "8",
-    "object_repr": "Molho Pesto - Grupo Trigo",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 60,
-  "fields": {
-    "action_time": "2019-10-19T21:09:10.375Z",
-    "user": 1,
-    "content_type": 18,
-    "object_id": "3",
-    "object_repr": "Lote A Molho Pesto",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 61,
-  "fields": {
-    "action_time": "2019-10-19T21:09:18.782Z",
-    "user": 1,
-    "content_type": 18,
-    "object_id": "1",
-    "object_repr": "Lote A Penne",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"composto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 62,
-  "fields": {
-    "action_time": "2019-10-19T21:10:37.239Z",
-    "user": 1,
-    "content_type": 19,
-    "object_id": "3",
-    "object_repr": "Lote A Trigo - Tritura\u00e7\u00e3o",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 63,
-  "fields": {
-    "action_time": "2019-10-20T03:12:39.783Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "6",
-    "object_repr": "Faffale ao molho de tomate - Spoleto",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"nome\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 64,
-  "fields": {
-    "action_time": "2019-10-20T03:13:21.875Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "9",
-    "object_repr": "Salada de Alface Crespa, Alface Roxa e R\u00facula - Spoleto",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 65,
-  "fields": {
-    "action_time": "2019-10-20T03:13:39.814Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "6",
-    "object_repr": "Faffale ao molho de tomate - Spoleto",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"url_imagem\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 66,
-  "fields": {
-    "action_time": "2019-10-20T03:13:56.690Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "2",
-    "object_repr": "Penne ao pesto - Spoleto",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 67,
-  "fields": {
-    "action_time": "2019-10-20T03:44:50.846Z",
-    "user": 1,
-    "content_type": 18,
-    "object_id": "4",
-    "object_repr": "Lote A Farffale ao molho de tomate",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 68,
-  "fields": {
-    "action_time": "2019-10-20T03:45:39.763Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "10",
-    "object_repr": "Molho de Tomate - Fazenda Jos\u00e9",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 69,
-  "fields": {
-    "action_time": "2019-10-20T03:45:51.586Z",
-    "user": 1,
-    "content_type": 18,
-    "object_id": "5",
-    "object_repr": "Lote A Molho de Tomate",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 70,
-  "fields": {
-    "action_time": "2019-10-20T03:45:56.895Z",
-    "user": 1,
-    "content_type": 18,
-    "object_id": "4",
-    "object_repr": "Lote A Farffale ao molho de tomate",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"composto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 71,
-  "fields": {
-    "action_time": "2019-10-20T03:46:59.544Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "10",
-    "object_repr": "Molho de Tomate - Fazenda Jos\u00e9",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"url_imagem\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 72,
-  "fields": {
-    "action_time": "2019-10-20T03:48:09.487Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "11",
-    "object_repr": "Farffale - Fazenda Jos\u00e9",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 73,
-  "fields": {
-    "action_time": "2019-10-20T03:48:13.375Z",
-    "user": 1,
-    "content_type": 18,
-    "object_id": "6",
-    "object_repr": "Lote A Farffale",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 74,
-  "fields": {
-    "action_time": "2019-10-20T03:48:35.232Z",
-    "user": 1,
-    "content_type": 18,
-    "object_id": "4",
-    "object_repr": "Lote A Farffale ao molho de tomate",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"composto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 75,
-  "fields": {
-    "action_time": "2019-10-20T03:58:32.543Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "6",
-    "object_repr": "Faffale ao molho de tomate AAAA - Spoleto",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"nome\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 76,
-  "fields": {
-    "action_time": "2019-10-20T03:58:48.169Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "6",
-    "object_repr": "Faffale ao molho de tomate - Spoleto",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"nome\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 77,
-  "fields": {
-    "action_time": "2019-10-20T04:00:59.018Z",
-    "user": 1,
-    "content_type": 18,
-    "object_id": "4",
-    "object_repr": "Lote A Farffale ao molho de tomate",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 78,
-  "fields": {
-    "action_time": "2019-10-20T04:03:24.525Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "10",
-    "object_repr": "Molho de Tomate - Fazenda Jos\u00e9",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"metricas\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 79,
-  "fields": {
-    "action_time": "2019-10-20T04:07:05.549Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "11",
-    "object_repr": "Farffale - Fazenda Jos\u00e9",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"metricas\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 80,
-  "fields": {
-    "action_time": "2019-10-20T04:16:04.113Z",
-    "user": 1,
-    "content_type": 13,
-    "object_id": "3",
-    "object_repr": "Fazenda Jos\u00e9",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"descricao\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 81,
-  "fields": {
-    "action_time": "2019-10-20T05:04:47.244Z",
-    "user": 1,
-    "content_type": 19,
-    "object_id": "4",
-    "object_repr": "Lote A Molho de Tomate - Recebimento",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 82,
-  "fields": {
-    "action_time": "2019-10-20T05:23:26.551Z",
-    "user": 1,
-    "content_type": 19,
-    "object_id": "5",
-    "object_repr": "Lote A Molho de Tomate - Fechamento",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 83,
-  "fields": {
-    "action_time": "2019-10-20T05:23:56.496Z",
-    "user": 1,
-    "content_type": 19,
-    "object_id": "6",
-    "object_repr": "Lote A Molho de Tomate - Sele\u00e7\u00e3o",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 84,
-  "fields": {
-    "action_time": "2019-10-20T05:24:25.728Z",
-    "user": 1,
-    "content_type": 19,
-    "object_id": "7",
-    "object_repr": "Lote A Molho de Tomate - Tomate",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 85,
-  "fields": {
-    "action_time": "2019-10-20T05:28:12.168Z",
-    "user": 1,
-    "content_type": 19,
-    "object_id": "8",
-    "object_repr": "Lote A Farffale - Recebimento",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 86,
-  "fields": {
-    "action_time": "2019-10-20T05:28:22.469Z",
-    "user": 1,
-    "content_type": 19,
-    "object_id": "9",
-    "object_repr": "Lote A Farffale - Fechamento",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 87,
-  "fields": {
-    "action_time": "2019-10-20T05:28:47.637Z",
-    "user": 1,
-    "content_type": 19,
-    "object_id": "10",
-    "object_repr": "Lote A Farffale - Suco",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 88,
-  "fields": {
-    "action_time": "2019-10-20T05:29:00.870Z",
-    "user": 1,
-    "content_type": 19,
-    "object_id": "11",
-    "object_repr": "Lote A Farffale - Sele\u00e7\u00e3o",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 89,
-  "fields": {
-    "action_time": "2019-10-20T05:42:20.680Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "11",
-    "object_repr": "Farffale - Fazenda do Jo\u00e3o",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"produtor\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 90,
-  "fields": {
-    "action_time": "2019-10-20T05:43:26.995Z",
-    "user": 1,
-    "content_type": 13,
-    "object_id": "4",
-    "object_repr": "Fazenda do Jo\u00e3o",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"descricao\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 91,
-  "fields": {
-    "action_time": "2019-10-20T05:43:37.591Z",
-    "user": 1,
-    "content_type": 13,
-    "object_id": "3",
-    "object_repr": "Fazenda Jos\u00e9",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"descricao\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 92,
-  "fields": {
-    "action_time": "2019-10-20T06:59:36.661Z",
-    "user": 1,
-    "content_type": 16,
-    "object_id": "2",
-    "object_repr": "Sabor",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"url_imagem\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 93,
-  "fields": {
-    "action_time": "2019-10-20T06:59:55.089Z",
-    "user": 1,
-    "content_type": 16,
-    "object_id": "3",
-    "object_repr": "Nutri\u00e7\u00e3o",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"url_imagem\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 94,
-  "fields": {
-    "action_time": "2019-10-20T07:00:08.593Z",
-    "user": 1,
-    "content_type": 16,
-    "object_id": "1",
-    "object_repr": "Apresenta\u00e7\u00e3o",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"url_imagem\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 95,
-  "fields": {
-    "action_time": "2019-10-20T07:01:10.534Z",
-    "user": 1,
-    "content_type": 16,
-    "object_id": "4",
-    "object_repr": "Higiene",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"url_imagem\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 96,
-  "fields": {
-    "action_time": "2019-10-20T07:04:29.758Z",
-    "user": 1,
-    "content_type": 19,
-    "object_id": "12",
-    "object_repr": "Lote A Farffale - Tritura\u00e7\u00e3o",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 97,
-  "fields": {
-    "action_time": "2019-10-20T07:04:48.505Z",
-    "user": 1,
-    "content_type": 19,
-    "object_id": "13",
-    "object_repr": "Lote A Molho de Tomate - Holding",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
+    "model": "dashboard.userdashboardmodule",
+    "pk": 1,
+    "fields": {
+        "title": "Quick links",
+        "module": "jet.dashboard.modules.LinkList",
+        "app_label": null,
+        "user": 1,
+        "column": 0,
+        "order": 0,
+        "settings": "{\"draggable\": false, \"deletable\": false, \"collapsible\": false, \"layout\": \"inline\"}",
+        "children": "[{\"title\": \"Return to site\", \"url\": \"/\"}, {\"title\": \"Alterar senha\", \"url\": \"/admin/password_change/\"}, {\"title\": \"Encerrar sess\\u00e3o\", \"url\": \"/admin/logout/\"}]",
+        "collapsed": false
+    }
+},
+{
+    "model": "dashboard.userdashboardmodule",
+    "pk": 2,
+    "fields": {
+        "title": "Aplica\u00e7\u00f5es",
+        "module": "jet.dashboard.modules.AppList",
+        "app_label": null,
+        "user": 1,
+        "column": 1,
+        "order": 0,
+        "settings": "{\"models\": null, \"exclude\": [\"auth.*\"]}",
+        "children": "",
+        "collapsed": false
+    }
+},
+{
+    "model": "dashboard.userdashboardmodule",
+    "pk": 3,
+    "fields": {
+        "title": "Administra\u00e7\u00e3o",
+        "module": "jet.dashboard.modules.AppList",
+        "app_label": null,
+        "user": 1,
+        "column": 2,
+        "order": 0,
+        "settings": "{\"models\": [\"auth.*\"], \"exclude\": null}",
+        "children": "",
+        "collapsed": false
+    }
+},
+{
+    "model": "dashboard.userdashboardmodule",
+    "pk": 4,
+    "fields": {
+        "title": "Recent Actions",
+        "module": "jet.dashboard.modules.RecentActions",
+        "app_label": null,
+        "user": 1,
+        "column": 0,
+        "order": 1,
+        "settings": "{\"limit\": 10, \"include_list\": null, \"exclude_list\": null, \"user\": null}",
+        "children": "",
+        "collapsed": false
+    }
+},
+{
+    "model": "dashboard.userdashboardmodule",
+    "pk": 5,
+    "fields": {
+        "title": "Latest Django News",
+        "module": "jet.dashboard.modules.Feed",
+        "app_label": null,
+        "user": 1,
+        "column": 1,
+        "order": 1,
+        "settings": "{\"feed_url\": \"http://www.djangoproject.com/rss/weblog/\", \"limit\": 5}",
+        "children": "",
+        "collapsed": false
+    }
+},
+{
+    "model": "dashboard.userdashboardmodule",
+    "pk": 6,
+    "fields": {
+        "title": "Support",
+        "module": "jet.dashboard.modules.LinkList",
+        "app_label": null,
+        "user": 1,
+        "column": 2,
+        "order": 1,
+        "settings": "{\"draggable\": true, \"deletable\": true, \"collapsible\": true, \"layout\": \"stacked\"}",
+        "children": "[{\"title\": \"Django documentation\", \"url\": \"http://docs.djangoproject.com/\", \"external\": true}, {\"title\": \"Django \\\"django-users\\\" mailing list\", \"url\": \"http://groups.google.com/group/django-users\", \"external\": true}, {\"title\": \"Django irc channel\", \"url\": \"irc://irc.freenode.net/django\", \"external\": true}]",
+        "collapsed": false
+    }
+},
+{
+    "model": "dashboard.userdashboardmodule",
+    "pk": 7,
+    "fields": {
+        "title": "Application models",
+        "module": "jet.dashboard.modules.ModelList",
+        "app_label": "badge",
+        "user": 1,
+        "column": 0,
+        "order": 0,
+        "settings": "{\"models\": [\"badge.*\"], \"exclude\": null}",
+        "children": "",
+        "collapsed": false
+    }
+},
+{
+    "model": "dashboard.userdashboardmodule",
+    "pk": 8,
+    "fields": {
+        "title": "Recent Actions",
+        "module": "jet.dashboard.modules.RecentActions",
+        "app_label": "badge",
+        "user": 1,
+        "column": 1,
+        "order": 0,
+        "settings": "{\"limit\": 10, \"include_list\": [\"badge.*\"], \"exclude_list\": null, \"user\": null}",
+        "children": "",
+        "collapsed": false
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$150000$GSmoV8xz0cpp$GA25fAe+LJvKPZ3ohuF0V84x2V7J0JyxBLgUEJ05FiE=",
+        "last_login": "2019-10-20T01:08:25.517Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@admin.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2019-10-19T15:04:34.381Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "f3e0m8f3pjlywvuv1ssppc477tgnnhi8",
+    "fields": {
+        "session_data": "M2FjMzhiMmNkMDlkOWIzM2U1ODliMmU2OWU0OTI1NDIxOTc3ZDFmNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJkNTMyZDQwMWQ1OWJlYmY0MWY3NTdkNDNlYjljYWVhNmE3Y2RiNDU5In0=",
+        "expire_date": "2019-11-02T23:42:15.663Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jmjkbwrqoo351so9onr5s301yhwmdio3",
+    "fields": {
+        "session_data": "M2FjMzhiMmNkMDlkOWIzM2U1ODliMmU2OWU0OTI1NDIxOTc3ZDFmNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJkNTMyZDQwMWQ1OWJlYmY0MWY3NTdkNDNlYjljYWVhNmE3Y2RiNDU5In0=",
+        "expire_date": "2019-11-02T15:04:39.824Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "x7ibcbsqck7disxznda1x71erbo7xxfu",
+    "fields": {
+        "session_data": "M2FjMzhiMmNkMDlkOWIzM2U1ODliMmU2OWU0OTI1NDIxOTc3ZDFmNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJkNTMyZDQwMWQ1OWJlYmY0MWY3NTdkNDNlYjljYWVhNmE3Y2RiNDU5In0=",
+        "expire_date": "2019-11-03T01:08:25.522Z"
+    }
+},
+{
+    "model": "produto.produto",
+    "pk": 3,
+    "fields": {
+        "nome": "Massa Industrial",
+        "descricao": "Massa processada industrialmente",
+        "url_imagem": null,
+        "produtor": 2,
+        "user": [
+            "admin"
+        ],
+        "metricas": []
+    }
+},
+{
+    "model": "produto.produto",
+    "pk": 4,
+    "fields": {
+        "nome": "Trigo do Campo",
+        "descricao": "Melhor trigo",
+        "url_imagem": null,
+        "produtor": 3,
+        "user": [
+            "admin"
+        ],
+        "metricas": []
+    }
+},
+{
+    "model": "produto.produto",
+    "pk": 5,
+    "fields": {
+        "nome": "Carne",
+        "descricao": "",
+        "url_imagem": null,
+        "produtor": 4,
+        "user": [
+            "admin"
+        ],
+        "metricas": [
+            1,
+            2,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "produto.produto",
+    "pk": 6,
+    "fields": {
+        "nome": "Faffale ao molho de tomate",
+        "descricao": "",
+        "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571526762/mainImages/macarrao_djdfzk.jpg",
+        "produtor": 1,
+        "user": [
+            "admin"
+        ],
+        "metricas": []
+    }
+},
+{
+    "model": "produto.produto",
+    "pk": 8,
+    "fields": {
+        "nome": "Molho Pesto",
+        "descricao": "",
+        "url_imagem": null,
+        "produtor": 2,
+        "user": [
+            "admin"
+        ],
+        "metricas": []
+    }
+},
+{
+    "model": "produto.produto",
+    "pk": 9,
+    "fields": {
+        "nome": "Salada de Alface Crespa, Alface Roxa e R\u00facula",
+        "descricao": "",
+        "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571526762/mainImages/salada_skm3vw.jpg",
+        "produtor": 1,
+        "user": [
+            "admin"
+        ],
+        "metricas": []
+    }
+},
+{
+    "model": "produto.produto",
+    "pk": 10,
+    "fields": {
+        "nome": "Molho de Tomate",
+        "descricao": "",
+        "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571501429/mainImages/tomato-sauce_3_vmzpv6.png",
+        "produtor": 3,
+        "user": [
+            "admin"
+        ],
+        "metricas": [
+            1,
+            2,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "produto.produto",
+    "pk": 11,
+    "fields": {
+        "nome": "Farffale",
+        "descricao": "",
+        "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571501429/mainImages/tomato-sauce_3_vmzpv6.png",
+        "produtor": 4,
+        "user": [
+            "admin"
+        ],
+        "metricas": [
+            1,
+            2,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "produto.metrica",
+    "pk": 1,
+    "fields": {
+        "nome": "Apresenta\u00e7\u00e3o",
+        "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571528205/mainImages/thinking_tt05fr.png",
+        "user": [
+            "admin"
+        ],
+        "processos": [
+            1,
+            2,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "produto.metrica",
+    "pk": 2,
+    "fields": {
+        "nome": "Sabor",
+        "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571528329/mainImages/in-love_tytozp.png",
+        "user": [
+            "admin"
+        ],
+        "processos": [
+            5,
+            6,
+            7,
+            8,
+            9
+        ]
+    }
+},
+{
+    "model": "produto.metrica",
+    "pk": 3,
+    "fields": {
+        "nome": "Nutri\u00e7\u00e3o",
+        "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571528199/mainImages/strong_udlbbk.png",
+        "user": [
+            "admin"
+        ],
+        "processos": [
+            10,
+            11,
+            12
+        ]
+    }
+},
+{
+    "model": "produto.metrica",
+    "pk": 4,
+    "fields": {
+        "nome": "Higiene",
+        "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571528329/mainImages/in-love_tytozp.png",
+        "user": [
+            "admin"
+        ],
+        "processos": [
+            13,
+            14,
+            15,
+            16,
+            17
+        ]
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 1,
+    "fields": {
+        "nome": "Recebimento",
+        "descricao": "Recebimento"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 2,
+    "fields": {
+        "nome": "Polpa Concentrada em latas",
+        "descricao": "Polpa Concentrada em latas"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 3,
+    "fields": {
+        "nome": "Tritura\u00e7\u00e3o",
+        "descricao": "Tritura\u00e7\u00e3o"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 4,
+    "fields": {
+        "nome": "Holding",
+        "descricao": "Holding"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 5,
+    "fields": {
+        "nome": "Fechamento",
+        "descricao": "Fechamento"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 6,
+    "fields": {
+        "nome": "Enchimento a quente de tambores",
+        "descricao": "Enchimento a quente de tambores"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 7,
+    "fields": {
+        "nome": "Suco",
+        "descricao": "Suco"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 8,
+    "fields": {
+        "nome": "Reservat\u00f3rio",
+        "descricao": "Reservat\u00f3rio"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 9,
+    "fields": {
+        "nome": "Refina\u00e7\u00e3o",
+        "descricao": "Refina\u00e7\u00e3o"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 10,
+    "fields": {
+        "nome": "Sele\u00e7\u00e3o",
+        "descricao": "Sele\u00e7\u00e3o"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 11,
+    "fields": {
+        "nome": "Despolpamento e refina\u00e7\u00e3o",
+        "descricao": "Despolpamento e refina\u00e7\u00e3o"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 12,
+    "fields": {
+        "nome": "Evapora\u00e7\u00e3o (concentra\u00e7\u00e3o)",
+        "descricao": "Evapora\u00e7\u00e3o (concentra\u00e7\u00e3o)"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 13,
+    "fields": {
+        "nome": "Lavagem",
+        "descricao": "Lavagem"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 14,
+    "fields": {
+        "nome": "Resfriamento Rotativo",
+        "descricao": "Resfriamento Rotativo"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 15,
+    "fields": {
+        "nome": "Tomate",
+        "descricao": "Tomate"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 16,
+    "fields": {
+        "nome": "Pasteuriza\u00e7\u00e3o",
+        "descricao": "Pasteuriza\u00e7\u00e3o"
+    }
+},
+{
+    "model": "produto.processo",
+    "pk": 17,
+    "fields": {
+        "nome": "Tratamento T\u00e9rmico",
+        "descricao": "Tratamento T\u00e9rmico"
+    }
+},
+{
+    "model": "produto.lote",
+    "pk": 1,
+    "fields": {
+        "nome": "Lote A Penne",
+        "data": "2019-10-31",
+        "produto": null,
+        "user": [
+            "admin"
+        ],
+        "composto": [
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "produto.lote",
+    "pk": 2,
+    "fields": {
+        "nome": "Lote A Trigo",
+        "data": "2019-10-19",
+        "produto": 4,
+        "user": [
+            "admin"
+        ],
+        "composto": []
+    }
+},
+{
+    "model": "produto.lote",
+    "pk": 3,
+    "fields": {
+        "nome": "Lote A Molho Pesto",
+        "data": "2019-10-20",
+        "produto": 8,
+        "user": [
+            "admin"
+        ],
+        "composto": []
+    }
+},
+{
+    "model": "produto.lote",
+    "pk": 4,
+    "fields": {
+        "nome": "Lote A Farffale ao molho de tomate",
+        "data": "2019-10-20",
+        "produto": 6,
+        "user": [
+            "admin"
+        ],
+        "composto": [
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "produto.lote",
+    "pk": 5,
+    "fields": {
+        "nome": "Lote A Molho de Tomate",
+        "data": "2019-10-20",
+        "produto": 10,
+        "user": [
+            "admin"
+        ],
+        "composto": []
+    }
+},
+{
+    "model": "produto.lote",
+    "pk": 6,
+    "fields": {
+        "nome": "Lote A Farffale",
+        "data": "2019-10-20",
+        "produto": 11,
+        "user": [
+            "admin"
+        ],
+        "composto": []
+    }
+},
+{
+    "model": "produto.historicolote",
+    "pk": 2,
+    "fields": {
+        "lote": 2,
+        "processo": 1,
+        "data": "2019-10-22",
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produto.historicolote",
+    "pk": 3,
+    "fields": {
+        "lote": 2,
+        "processo": 3,
+        "data": "2019-10-10",
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produto.historicolote",
+    "pk": 4,
+    "fields": {
+        "lote": 5,
+        "processo": 1,
+        "data": "2019-10-20",
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produto.historicolote",
+    "pk": 5,
+    "fields": {
+        "lote": 5,
+        "processo": 5,
+        "data": "2019-10-20",
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produto.historicolote",
+    "pk": 6,
+    "fields": {
+        "lote": 5,
+        "processo": 10,
+        "data": "2019-10-20",
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produto.historicolote",
+    "pk": 7,
+    "fields": {
+        "lote": 5,
+        "processo": 15,
+        "data": "2019-10-20",
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produto.historicolote",
+    "pk": 8,
+    "fields": {
+        "lote": 6,
+        "processo": 1,
+        "data": "2019-10-20",
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produto.historicolote",
+    "pk": 9,
+    "fields": {
+        "lote": 6,
+        "processo": 5,
+        "data": "2019-10-20",
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produto.historicolote",
+    "pk": 10,
+    "fields": {
+        "lote": 6,
+        "processo": 7,
+        "data": "2019-10-20",
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produto.historicolote",
+    "pk": 11,
+    "fields": {
+        "lote": 6,
+        "processo": 10,
+        "data": "2019-10-21",
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produto.historicolote",
+    "pk": 12,
+    "fields": {
+        "lote": 6,
+        "processo": 3,
+        "data": "2019-10-20",
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produto.historicolote",
+    "pk": 13,
+    "fields": {
+        "lote": 5,
+        "processo": 4,
+        "data": "2019-10-20",
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produtor.produtor",
+    "pk": 1,
+    "fields": {
+        "nome": "Spoleto",
+        "tipo": 30,
+        "descricao": null,
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produtor.produtor",
+    "pk": 2,
+    "fields": {
+        "nome": "Grupo Trigo",
+        "tipo": 20,
+        "descricao": null,
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produtor.produtor",
+    "pk": 3,
+    "fields": {
+        "nome": "Fazenda Jos\u00e9",
+        "tipo": 10,
+        "descricao": "Descri\u00e7\u00e3o da fazenda do Jos\u00e9",
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produtor.produtor",
+    "pk": 4,
+    "fields": {
+        "nome": "Fazenda do Jo\u00e3o",
+        "tipo": 10,
+        "descricao": "Descri\u00e7\u00e3o da fazenda do Jo\u00e3o",
+        "user": [
+            "admin"
+        ]
+    }
+},
+{
+    "model": "produtor.local",
+    "pk": 1,
+    "fields": {
+        "nome": "Spoleto Rio Branco",
+        "endereco": "end",
+        "produtor": 1
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2019-10-19T17:23:19.480Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "1",
+        "object_repr": "Massa",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2019-10-19T17:23:44.015Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "2",
+        "object_repr": "Penne ao pesto",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2019-10-19T17:24:49.057Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produtor",
+            "produtor"
+        ],
+        "object_id": "1",
+        "object_repr": "Spoleto",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2019-10-19T17:25:13.194Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produtor",
+            "produtor"
+        ],
+        "object_id": "2",
+        "object_repr": "Grupo Trigo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2019-10-19T17:26:09.302Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "3",
+        "object_repr": "Massa Industrial",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2019-10-19T17:26:11.655Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produtor",
+            "produtor"
+        ],
+        "object_id": "2",
+        "object_repr": "Grupo Trigo",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"produtos\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2019-10-19T17:27:13.166Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produtor",
+            "produtor"
+        ],
+        "object_id": "3",
+        "object_repr": "Trigo do Campo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2019-10-19T17:27:46.865Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "4",
+        "object_repr": "Trigo do Campo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2019-10-19T17:27:48.708Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produtor",
+            "produtor"
+        ],
+        "object_id": "3",
+        "object_repr": "Fazenda Jos\u00e9",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"nome\", \"produtos\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2019-10-19T17:28:44.023Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "1",
+        "object_repr": "Massa",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"composicao\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2019-10-19T17:29:04.900Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "3",
+        "object_repr": "Massa Industrial",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"composicao\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2019-10-19T17:29:16.666Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "1",
+        "object_repr": "Massa",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2019-10-19T17:29:25.850Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "2",
+        "object_repr": "Penne ao pesto",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"composicao\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2019-10-19T17:53:20.286Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "4",
+        "object_repr": "Trigo do Campo - Fazenda Jos\u00e9",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"produtor\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2019-10-19T17:53:26.941Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "3",
+        "object_repr": "Massa Industrial - Grupo Trigo",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"produtor\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2019-10-19T17:53:45.498Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "2",
+        "object_repr": "Penne ao pesto - Spoleto",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"produtor\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2019-10-19T18:01:00.461Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produtor",
+            "local"
+        ],
+        "object_id": "1",
+        "object_repr": "Spoleto Rio Branco - Spoleto",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2019-10-19T18:05:07.699Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "caracteristicaetapa"
+        ],
+        "object_id": "1",
+        "object_repr": "Plantado a mao",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2019-10-19T18:09:05.048Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "etapapreparacao"
+        ],
+        "object_id": "1",
+        "object_repr": "Planta\u00e7\u00e3o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2019-10-19T18:19:38.180Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produtor",
+            "produtor"
+        ],
+        "object_id": "4",
+        "object_repr": "Fazenda do Jo\u00e3o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2019-10-19T18:19:42.840Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "5",
+        "object_repr": "Carne - Fazenda do Jo\u00e3o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2019-10-19T18:19:49.308Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "6",
+        "object_repr": "Bife Acebolado - Spoleto",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2019-10-19T18:23:38.724Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "1",
+        "object_repr": "Recebimento",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2019-10-19T18:24:15.726Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "2",
+        "object_repr": "Polpa Concentrada em latas",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2019-10-19T18:24:24.370Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "3",
+        "object_repr": "Tritura\u00e7\u00e3o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2019-10-19T18:24:33.521Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "4",
+        "object_repr": "Holding",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2019-10-19T18:24:36.459Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "metrica"
+        ],
+        "object_id": "1",
+        "object_repr": "Apresenta\u00e7\u00e3o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2019-10-19T18:24:41.182Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "5",
+        "object_repr": "Carne - Fazenda do Jo\u00e3o",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"metricas\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2019-10-19T18:25:16.473Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "5",
+        "object_repr": "Fechamento",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2019-10-19T18:25:33.974Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "6",
+        "object_repr": "Enchimento a quente de tambores",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2019-10-19T18:25:44.245Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "7",
+        "object_repr": "Suco",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2019-10-19T18:25:56.736Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "8",
+        "object_repr": "Reservat\u00f3rio",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2019-10-19T18:26:09.681Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "9",
+        "object_repr": "Refina\u00e7\u00e3o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2019-10-19T18:26:25.003Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "metrica"
+        ],
+        "object_id": "2",
+        "object_repr": "Sabor",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2019-10-19T18:26:28.206Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "5",
+        "object_repr": "Carne - Fazenda do Jo\u00e3o",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"metricas\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2019-10-19T18:26:50.652Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "10",
+        "object_repr": "Sele\u00e7\u00e3o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2019-10-19T18:27:04.780Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "11",
+        "object_repr": "Despolpamento e refina\u00e7\u00e3o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2019-10-19T18:27:18.405Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "12",
+        "object_repr": "Evapora\u00e7\u00e3o (concentra\u00e7\u00e3o)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2019-10-19T18:27:19.606Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "metrica"
+        ],
+        "object_id": "3",
+        "object_repr": "Nutri\u00e7\u00e3o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2019-10-19T18:27:21.711Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "5",
+        "object_repr": "Carne - Fazenda do Jo\u00e3o",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"metricas\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2019-10-19T18:27:45.569Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "13",
+        "object_repr": "Lavagem",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2019-10-19T18:28:01.293Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "14",
+        "object_repr": "Resfriamento Rotativo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2019-10-19T18:28:10.252Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "15",
+        "object_repr": "Tomate",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2019-10-19T18:28:29.221Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "16",
+        "object_repr": "Pasteuriza\u00e7\u00e3o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2019-10-19T18:28:45.333Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "processo"
+        ],
+        "object_id": "17",
+        "object_repr": "Tratamento T\u00e9rmico",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2019-10-19T18:28:46.464Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "metrica"
+        ],
+        "object_id": "4",
+        "object_repr": "Higiene",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2019-10-19T18:28:47.545Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "5",
+        "object_repr": "Carne - Fazenda do Jo\u00e3o",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"metricas\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2019-10-19T18:32:38.511Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "7",
+        "object_repr": "teste - Spoleto",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2019-10-19T18:32:44.193Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "7",
+        "object_repr": "teste - Spoleto",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2019-10-19T19:11:08.510Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "lote"
+        ],
+        "object_id": "1",
+        "object_repr": "Lote A",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2019-10-19T19:51:33.219Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "lote"
+        ],
+        "object_id": "1",
+        "object_repr": "Lote A Penne",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"nome\", \"produto\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2019-10-19T19:54:46.206Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "2",
+        "object_repr": "Penne ao pesto - Spoleto",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"composicao\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2019-10-19T19:59:00.812Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "lote"
+        ],
+        "object_id": "2",
+        "object_repr": "Lote A Trigo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2019-10-19T19:59:06.638Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "lote"
+        ],
+        "object_id": "1",
+        "object_repr": "Lote A Penne",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2019-10-19T19:59:32.619Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "lote"
+        ],
+        "object_id": "1",
+        "object_repr": "Lote A Penne",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"composto\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2019-10-19T20:37:55.095Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "lote"
+        ],
+        "object_id": "1",
+        "object_repr": "Lote A Penne",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"composto\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2019-10-19T20:40:30.282Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "lote"
+        ],
+        "object_id": "1",
+        "object_repr": "Lote A Penne",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"composto\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2019-10-19T21:03:57.834Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "historicolote"
+        ],
+        "object_id": "2",
+        "object_repr": "Lote A Trigo - Recebimento",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2019-10-19T21:09:02.247Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "8",
+        "object_repr": "Molho Pesto - Grupo Trigo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2019-10-19T21:09:10.375Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "lote"
+        ],
+        "object_id": "3",
+        "object_repr": "Lote A Molho Pesto",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2019-10-19T21:09:18.782Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "lote"
+        ],
+        "object_id": "1",
+        "object_repr": "Lote A Penne",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"composto\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2019-10-19T21:10:37.239Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "historicolote"
+        ],
+        "object_id": "3",
+        "object_repr": "Lote A Trigo - Tritura\u00e7\u00e3o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2019-10-20T03:12:39.783Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "6",
+        "object_repr": "Faffale ao molho de tomate - Spoleto",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"nome\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2019-10-20T03:13:21.875Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "9",
+        "object_repr": "Salada de Alface Crespa, Alface Roxa e R\u00facula - Spoleto",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2019-10-20T03:13:39.814Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "6",
+        "object_repr": "Faffale ao molho de tomate - Spoleto",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"url_imagem\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2019-10-20T03:13:56.690Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "2",
+        "object_repr": "Penne ao pesto - Spoleto",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2019-10-20T03:44:50.846Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "lote"
+        ],
+        "object_id": "4",
+        "object_repr": "Lote A Farffale ao molho de tomate",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2019-10-20T03:45:39.763Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "10",
+        "object_repr": "Molho de Tomate - Fazenda Jos\u00e9",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2019-10-20T03:45:51.586Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "lote"
+        ],
+        "object_id": "5",
+        "object_repr": "Lote A Molho de Tomate",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2019-10-20T03:45:56.895Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "lote"
+        ],
+        "object_id": "4",
+        "object_repr": "Lote A Farffale ao molho de tomate",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"composto\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2019-10-20T03:46:59.544Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "10",
+        "object_repr": "Molho de Tomate - Fazenda Jos\u00e9",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"url_imagem\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2019-10-20T03:48:09.487Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "11",
+        "object_repr": "Farffale - Fazenda Jos\u00e9",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2019-10-20T03:48:13.375Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "lote"
+        ],
+        "object_id": "6",
+        "object_repr": "Lote A Farffale",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2019-10-20T03:48:35.232Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "lote"
+        ],
+        "object_id": "4",
+        "object_repr": "Lote A Farffale ao molho de tomate",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"composto\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2019-10-20T03:58:32.543Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "6",
+        "object_repr": "Faffale ao molho de tomate AAAA - Spoleto",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"nome\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2019-10-20T03:58:48.169Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "6",
+        "object_repr": "Faffale ao molho de tomate - Spoleto",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"nome\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2019-10-20T04:00:59.018Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "lote"
+        ],
+        "object_id": "4",
+        "object_repr": "Lote A Farffale ao molho de tomate",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2019-10-20T04:03:24.525Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "10",
+        "object_repr": "Molho de Tomate - Fazenda Jos\u00e9",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"metricas\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2019-10-20T04:07:05.549Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "11",
+        "object_repr": "Farffale - Fazenda Jos\u00e9",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"metricas\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2019-10-20T04:16:04.113Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produtor",
+            "produtor"
+        ],
+        "object_id": "3",
+        "object_repr": "Fazenda Jos\u00e9",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"descricao\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2019-10-20T05:04:47.244Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "historicolote"
+        ],
+        "object_id": "4",
+        "object_repr": "Lote A Molho de Tomate - Recebimento",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2019-10-20T05:23:26.551Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "historicolote"
+        ],
+        "object_id": "5",
+        "object_repr": "Lote A Molho de Tomate - Fechamento",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2019-10-20T05:23:56.496Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "historicolote"
+        ],
+        "object_id": "6",
+        "object_repr": "Lote A Molho de Tomate - Sele\u00e7\u00e3o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2019-10-20T05:24:25.728Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "historicolote"
+        ],
+        "object_id": "7",
+        "object_repr": "Lote A Molho de Tomate - Tomate",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2019-10-20T05:28:12.168Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "historicolote"
+        ],
+        "object_id": "8",
+        "object_repr": "Lote A Farffale - Recebimento",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2019-10-20T05:28:22.469Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "historicolote"
+        ],
+        "object_id": "9",
+        "object_repr": "Lote A Farffale - Fechamento",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2019-10-20T05:28:47.637Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "historicolote"
+        ],
+        "object_id": "10",
+        "object_repr": "Lote A Farffale - Suco",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2019-10-20T05:29:00.870Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "historicolote"
+        ],
+        "object_id": "11",
+        "object_repr": "Lote A Farffale - Sele\u00e7\u00e3o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2019-10-20T05:42:20.680Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "produto"
+        ],
+        "object_id": "11",
+        "object_repr": "Farffale - Fazenda do Jo\u00e3o",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"produtor\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2019-10-20T05:43:26.995Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produtor",
+            "produtor"
+        ],
+        "object_id": "4",
+        "object_repr": "Fazenda do Jo\u00e3o",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"descricao\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2019-10-20T05:43:37.591Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produtor",
+            "produtor"
+        ],
+        "object_id": "3",
+        "object_repr": "Fazenda Jos\u00e9",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"descricao\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2019-10-20T06:59:36.661Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "metrica"
+        ],
+        "object_id": "2",
+        "object_repr": "Sabor",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"url_imagem\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2019-10-20T06:59:55.089Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "metrica"
+        ],
+        "object_id": "3",
+        "object_repr": "Nutri\u00e7\u00e3o",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"url_imagem\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2019-10-20T07:00:08.593Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "metrica"
+        ],
+        "object_id": "1",
+        "object_repr": "Apresenta\u00e7\u00e3o",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"url_imagem\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2019-10-20T07:01:10.534Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "metrica"
+        ],
+        "object_id": "4",
+        "object_repr": "Higiene",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"url_imagem\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2019-10-20T07:04:29.758Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "historicolote"
+        ],
+        "object_id": "12",
+        "object_repr": "Lote A Farffale - Tritura\u00e7\u00e3o",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2019-10-20T07:04:48.505Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "produto",
+            "historicolote"
+        ],
+        "object_id": "13",
+        "object_repr": "Lote A Molho de Tomate - Holding",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
 }
 ]
