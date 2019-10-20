@@ -20,7 +20,7 @@ const PratosTemplates = (function(){
             <div class="card mb-5">
                 <div class="card-body text-center"> 
                     
-                    <img class="" src="../storytelling/img/sem_pratos.png" style="width: 60%" alt="">            
+                    <img class="" src="/img/sem_pratos.png" style="width: 60%" alt="">            
                     <h4>Nenhum restaurante ou fornecedor informado.</h4>
                 </div>
             </div>
