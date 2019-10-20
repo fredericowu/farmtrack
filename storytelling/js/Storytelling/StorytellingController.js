@@ -65,13 +65,12 @@ const StoryTellingController = (function(){
         $("#step").html(StoryTellingTemplates.step(step));
         $("#metrica").html(step.metrica);
 
-        if(nextStep){
             for(let processo of step.processos){
                 $("#checks").append(`
                     <h5><span class="fas fa-check-circle text-success"></span> ${processo}</h5>
                 `);
             }   
-        }
+        
 
         $("#page").html((stepNum + 1) + " de " + steps.length);
 
