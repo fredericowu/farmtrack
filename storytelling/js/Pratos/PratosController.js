@@ -12,7 +12,13 @@ const PratosController = (function(){
 
         new Promise((res, rej) => {
             $("#pratos").html(PratosTemplates.loader());
-            $.get("/api/produtos/?produtor="+nome, res);
+            $.get("/api/produtos/?produtor="+nome, function(pratos){
+               if(pratos.length == 0){
+                   rej();
+                   return;
+               }
+               res(pratos);
+            });
         }).then(pratos => {
             $("#pratos").html("");
             if(pratos.length == 0){
@@ -26,7 +32,9 @@ const PratosController = (function(){
             $("#qtd_pratos").html(pratos.length);
     
             $("#empresa").html(nome);
-        });
+        }).catch((err)=>{
+            $("#pratos").html(TemplateGlobal.itemNaoEncontrado());
+        })
 
 
     }
