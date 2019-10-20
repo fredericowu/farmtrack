@@ -12,7 +12,7 @@ const PratosController = (function(){
 
         new Promise((res, rej) => {
             $("#pratos").html(PratosTemplates.loader());
-            $.get("http://192.168.249.193:8888/api/produtos/?produtor="+nome, res);
+            $.get("/api/produtos/?produtor="+nome, res);
         }).then(pratos => {
             $("#pratos").html("");
             for(let prato of pratos){

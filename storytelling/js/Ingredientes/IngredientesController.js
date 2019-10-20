@@ -15,7 +15,7 @@ const IngredientesController = (function(){
         }
 
         new Promise((res, rej) => {
-            $.get("http://192.168.249.193:8888/api/produtos/detalhes/?id="+pratoId, res);
+            $.get("/api/produtos/detalhes/?id="+pratoId, res);
         }).then((ingredientes) => {
 
             for(let ingrediente of ingredientes){
