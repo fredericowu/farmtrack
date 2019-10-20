@@ -39,7 +39,7 @@ class HistoricosLote(viewsets.ViewSet):
         metricas = {}
         for h in historico:
             metrica = h.processo.get_metrica()
-            if metrica.nome not in metricas:
+            if metrica and metrica.nome not in metricas:
                 metricas[metrica.nome] = {}
                 metricas[metrica.nome]["processos"] = []
                 metricas[metrica.nome]["metrica"] = metrica.nome
