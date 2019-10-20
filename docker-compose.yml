@@ -31,18 +31,18 @@ services:
     networks:
       - hackingrio
 
-#  nginx:
-#    image: nginx:latest
-#    container_name: nginx
-#    depends_on:
-#      - plataforma
-#    ports:
-#      - "80:80"
-#    networks:
-#      - hackingrio
-#    volumes:
-#      - ./nginx/conf.d:/etc/nginx/conf.d
-
+  nginx-farmtrack:
+    image: nginx:latest
+    container_name: nginx-farmtrack
+    depends_on:
+      - plataforma
+    ports:
+      - "80:80"
+    networks:
+      - hackingrio
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./project/front-app/:/www
 
 networks:
   hackingrio: {}
