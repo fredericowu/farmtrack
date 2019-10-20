@@ -1,0 +1,30 @@
+.divider-custom.divider-light .divider-custom-line{
+    background: #333;
+}
+
+.masthead {
+    padding-top: 6rem;
+}
+
+
+.storytelling .masthead {
+    padding-top: 1rem;
+}
+
+h2, h3, h4, h5, h6 {
+    color : #333 !important;
+}
+
+body{
+    background : #eee;
+}
+
+
+.masthead-avatar{
+    padding:0;
+    background:  white;
+    width: 200px !important;
+    border: 7px solid white;
+}
+
+
