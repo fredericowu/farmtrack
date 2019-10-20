@@ -11,5 +11,6 @@ COPY /envs/docker /.env
 COPY requirements.txt /requirements.txt
 COPY project/plataforma /src/
 COPY scripts /scripts
+RUN chmod a+x /scripts/*.sh
 RUN /scripts/build.sh
 CMD /scripts/plataforma_start.sh
