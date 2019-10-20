@@ -4,7 +4,7 @@ const PratosController = (function(){
         const url = new URL(location.href);
         const nome = url.searchParams.get("nome");
         if(!nome){
-            $("#pratos").html(PratosTemplates.nenhumPrato());
+            $("#pratos").html(TemplateGlobal.itemNaoEncontrado());
             return;
         }
 
@@ -15,6 +15,10 @@ const PratosController = (function(){
             $.get("/api/produtos/?produtor="+nome, res);
         }).then(pratos => {
             $("#pratos").html("");
+            if(pratos.length == 0){
+                $("#pratos").html(TemplateGlobal.itemNaoEncontrado());
+                return;
+            }
             for(let prato of pratos){
                 $("#pratos").append(PratosTemplates.item(prato));
             }

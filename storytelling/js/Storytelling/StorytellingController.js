@@ -9,13 +9,17 @@ const StoryTellingController = (function(){
         const url = new URL(location.href);
         const lote = url.searchParams.get("lote");
         if(!lote){
-            $("#step").html(StoryTellingTemplates.nenhumLote());
+            $("#step").html(TemplateGlobal.itemNaoEncontrado());
             return;
         }
 
         new Promise((res, rej) => {
             $.get("/api/historicoslote/?lote="+lote, res);
         }).then((historico) => {
+            if(historico.length == 0){
+                $("#step").html(TemplateGlobal.itemNaoEncontrado());
+                return;
+            }
             steps = historico;
             steps.push({
                 "metrica": "Estamos contruibuindo para um mundo mais transparente!",
