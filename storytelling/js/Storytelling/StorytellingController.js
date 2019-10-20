@@ -49,7 +49,7 @@ const StoryTellingController = (function(){
         //});
 
         new Promise((res, rej) => {
-            $.get("http://192.168.249.193:8888/api/historicoslote/?lote="+lote, res);
+            $.get("/api/historicoslote/?lote="+lote, res);
         }).then((historico) => {
             for(let item of historico){
                 steps.push(
