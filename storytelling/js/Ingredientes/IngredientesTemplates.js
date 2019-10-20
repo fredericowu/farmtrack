@@ -36,7 +36,7 @@ const IngredientesTemplates = (function(){
                         <h5>Produtos</h5>
                         <hr>
                         <ul>
-                             ${produtosHTML(ingrediente.produtor.produtos)}
+                            ${produtosHTML(ingrediente.produtor.produtos)}
                         </ul>
                     </div>
                 
