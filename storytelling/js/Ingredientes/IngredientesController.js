@@ -9,6 +9,7 @@ const IngredientesController = (function(){
 
         const url = new URL(location.href);
         const pratoId = url.searchParams.get("prato");
+        
         if(!pratoId){
             $("#ingredientes").html(TemplateGlobal.itemNaoEncontrado());
             return;
@@ -21,6 +22,7 @@ const IngredientesController = (function(){
                 $("#ingredientes").html(TemplateGlobal.itemNaoEncontrado());
                 return;
             }
+            
             for(let ingrediente of ingredientes){
                 if(ingrediente.fornecedor) fornecedores.push(ingrediente.fornecedor);
                 $("#ingredientes").append(IngredientesTemplates.item(ingrediente));

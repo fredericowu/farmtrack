@@ -61,7 +61,7 @@ const IngredientesTemplates = (function(){
                             <div class="card-footer">
                                 <h6 class="text-dark">Métricas de qualidade</h6>
                                 ${metricasHTML(ingrediente.metricas)}
-                                <button type="button" class="btn btn-lg btn-block btn-round btn-warning mt-3" onclick="window.location.href='storytelling.html?ingrediente=${ingrediente.lote}'"><strong>VER HISTÓRIA</strong></button>
+                                <button type="button" class="btn btn-lg btn-block btn-round btn-warning mt-3" onclick="window.location.href='storytelling.html?ingrediente=${ingrediente.lote}&nome=${ingrediente.nome}'"><strong>VER HISTÓRIA</strong></button>
                             </div>
                         </div>
                     </div>
