@@ -40,9 +40,21 @@
             </div>
         </div>
     </div>
+    
+    
+
     <header class="masthead text-white text-center" id="step">
         
     </header>
+
+    <div class="container resetSession-btn" style="display:none">
+            <div class="row">
+                <div class="col-12 text-center">
+                        <button class="btn btn-dark btn-lg" onclick="StoryTellingController.resetSession()"><span class="fas fa-home"></span> Página inicial</button>
+                </div>
+            </div>
+        </div>
+    
 
     <div class="container-fluid" style="position: fixed; bottom: 10px">
         <div class="row">
@@ -53,7 +65,7 @@
                 <p class="mt-2" id="page"></p>
             </div>
             <div class="col-2">
-                <button class="btn btn-warning btn-md float-right" onclick="StoryTellingController.next()"><span class="fas fa-arrow-right"></span></button>
+                <button class="btn btn-warning btn-md next-btn float-right" onclick="StoryTellingController.next()"><span class="fas fa-arrow-right"></span></button>
             </div>
         </div>
 
@@ -66,6 +78,7 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+    
     <script src="js/Storytelling/StorytellingTemplates.js"></script>
     <script src="js/Storytelling/StorytellingController.js"></script>
 

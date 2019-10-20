@@ -2,29 +2,64 @@ const StoryTellingController = (function(){
 
     let stepNum = 0;
 
-    let steps = [];
+    
+    let steps = [
+        {
+            "processos": [
+                "Uniformização das Mudas"
+            ],
+            "metrica": "Apresentação",
+            "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571528205/mainImages/thinking_tt05fr.png"
+        },
+        {
+            "processos": [
+                "Seleção",
+                "Suplementação de Nutrientes"
+            ],
+            "metrica": "Nutrição",
+            "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571528199/mainImages/strong_udlbbk.png"
+        },
+        {
+            "processos": [
+                "Substratos comerciais"
+            ],
+            "metrica": "Sabor",
+            "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571528329/mainImages/in-love_tytozp.png"
+        },
+        {
+            "processos": [
+                "Controle Fitossanitário",
+                "Tratamento Térmico"
+            ],
+            "metrica": "Higiene",
+            "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571573821/mainImages/higiene_hlqwnw.jpg"
+        }
+    ]
 
     const init = function(){
 
         const url = new URL(location.href);
-        const lote = url.searchParams.get("ingrediente");
+        const lote = url.searchParams.get("lote");
         if(!lote){
-            $("#").html(IngredientesTemplates.nenhumIngrediente());
+            $("#step").html(StoryTellingTemplates.nenhumLote());
             return;
         }
 
-        new Promise((res, rej) => {
-            $.get("/api/historicoslote/?lote="+lote, res);
-        }).then((historico) => {
-            for(let item of historico){
-                steps.push(item);
-                if(ingrediente.fornecedor) fornecedores.push(ingrediente.fornecedor);
-                $("#ingredientes").append(IngredientesTemplates.item(ingrediente));
-                $("#ingredientes").append(StoryTellingTemplates.step(item));
-            }
+       // new Promise((res, rej) => {
+       //     $.get("/api/historicoslote/?lote="+lote, res);
+       // }).then((historico) => {
+            // steps = historico
+            
+            
+            steps.push({
+                "metrica": "You rock!",
+                "url_imagem": "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571572759/mainImages/satisfaction_xwh9ge.jpg",
+                "processos": []
+            }); 
+
 
             setStep(true);
-        });
+       // });
 
 
     }
@@ -42,9 +77,18 @@ const StoryTellingController = (function(){
     const setStep = function(nextStep){
         if(stepNum == 0){
             $(".prev-btn").hide();
-        }else{
+        }else {
             $(".prev-btn").show();
         }
+
+        if(stepNum == (steps.length - 1)){
+            $(".next-btn").hide();
+            $(".resetSession-btn").show();
+        }else{
+            $(".next-btn").show();
+            $(".resetSession-btn").hide();
+        }
+
         let step = steps[stepNum];
         $("#step").html(StoryTellingTemplates.step(step));
         $("#metrica").html(step.metrica);
