@@ -1,4 +1,4 @@
-const StoryTellingTemplates = (function(){
+const StorytellingTemplates = (function(){
     const step = function(obj){
         return `
         <div class="container d-flex align-items-center flex-column">
@@ -17,6 +17,7 @@ const StoryTellingTemplates = (function(){
         </div>
         `;
     }
+
 
     return {
         step : step

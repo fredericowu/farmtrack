@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
 
@@ -8,58 +8,35 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Inspetor</title>
+  <title>Farm Track</title>
 
-  <!-- Custom fonts for this theme -->
+  
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   
-  <link rel="stylesheet" href="/bootstrap-horizon/dist/bootstrap-horizon.min.css">
-  <!-- Theme CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css">
 
 </head>
 
 <body id="page-top" style="background : #eee">
     <nav class="navbar navbar-light bg-dark  text-center">
-        <a class="navbar-brand text-white" style="font-weight: 700" href="#">Farm Track <small class="text-warning" style="font-weight: 700">Spoleto</small></a>
+        <a class="navbar-brand text-white" style="font-weight: 700" href="#">Farm Track <small class="text-warning" style="font-weight: 700" id="empresa"></small></a>
       </nav>
   <div class="container mt-3">
     <div class="row">
       <div class="col-lg-12">
-          <h5 class="text-dark"><span class="fas fa-medal text-success"></span> Pratos certificados</h5>   
+          <h5 class="text-dark"><span class="fas fa-medal text-success"></span> Pratos certificados (<span id="qtd_pratos"></span>)</h5>   
           <hr>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="card mb-5">
-          <div class="card-body text-center"> 
-            <h5 class="text-center">Faffale ao molho de tomate</h5>
-            <img class="masthead-avatar" src="https://res.cloudinary.com/trackfarmcdn/image/upload/v1571526762/mainImages/macarrao_djdfzk.jpg " alt="">            
-            <button type="button" class="btn btn-lg btn-block btn-round btn-warning mt-3" onclick="window.location.href='ingredientes.html'"><strong>VER INGREDIENTES</strong></button>
-          </div>
-            
-              
-          </div>
-        </div>
+    <div class="row" id="pratos">
       
-      <div class="col-lg-6">
-          <div class="card mb-5">
-            <div class="card-body text-center"> 
-              <h5 class="text-center">Salada de Alface Crespa, Alface Roxa e Rúcula.</h5>
-              <img class="masthead-avatar" src="https://res.cloudinary.com/trackfarmcdn/image/upload/v1571526762/mainImages/salada_skm3vw.jpg" alt="">            
-              <button type="button" class="btn btn-lg btn-block btn-round btn-warning mt-3" onclick="window.location.href='ingredientes.html'"><strong>VER INGREDIENTES</strong></button>
-            </div>
-              
-                
-            </div>
-          </div>
-        </div>
     </div>
+    
   </div>  
 
   <div class="modal fade " id="myModal" >
@@ -108,6 +85,9 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+
+  <script src="js/Pratos/PratosTemplates.js"></script>
+  <script src="js/Pratos/PratosController.js"></script>
 
 </body>
 
