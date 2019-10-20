@@ -31,9 +31,11 @@ const PratosTemplates = (function(){
 
     const loader = function(){
         return `
-        <div class="ph-item">
-            <div class="ph-col-12">
-            <div class="ph-picture"></div>          
+        <div class="col-12">
+            <div class="ph-item">
+                <div class="ph-col-12">
+                <div class="ph-picture"></div>          
+                </div>
             </div>
         </div>
         `;

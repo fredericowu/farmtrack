@@ -17,7 +17,6 @@ const IngredientesController = (function(){
         new Promise((res, rej) => {
             $.get("/api/produtos/detalhes/?id="+pratoId, res);
         }).then((ingredientes) => {
-
             for(let ingrediente of ingredientes){
                 if(ingrediente.fornecedor) fornecedores.push(ingrediente.fornecedor);
                 $("#ingredientes").append(IngredientesTemplates.item(ingrediente));

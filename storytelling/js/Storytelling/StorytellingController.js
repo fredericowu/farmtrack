@@ -2,38 +2,7 @@ const StoryTellingController = (function(){
 
     let stepNum = 0;
 
-    let steps = [
-        /*
-        {
-            checks : ["Comeu só coisa boa", "Comeu catupiry", "Ficou no sol marinando"],
-            mainImage : "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571528329/mainImages/in-love_tytozp.png",
-            description : "",
-            background : "",
-            metrica : "Sabor"
-        },
-        {
-            checks : ["justificativa 1", "justificativa 2", "justificativa 3"],
-            mainImage : "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571528199/mainImages/strong_udlbbk.png",
-            description : "",
-            background : "",
-            metrica : "Nutrição"
-        },
-        {
-            checks : ["justificativa 1", "justificativa 2", "justificativa 3"],
-            mainImage : "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571528205/mainImages/thinking_tt05fr.png",
-            description : "",
-            background : "",
-            metrica : "Boa Apresentação"
-        },
-        {
-            checks : ["justificativa 1", "justificativa 2", "justificativa 3"],
-            mainImage : "img/cow_badge.png",
-            description : "",
-            background : "",
-            metrica : "Higienge"
-        }
-        */
-    ];
+    let steps = [];
 
     const init = function(){
 
@@ -44,28 +13,14 @@ const StoryTellingController = (function(){
             return;
         }
 
-        //$.get("/", function(){
-
-        //});
-
         new Promise((res, rej) => {
             $.get("/api/historicoslote/?lote="+lote, res);
         }).then((historico) => {
             for(let item of historico){
-                steps.push(
-                    item
-                    /*
-                    {
-                        checks : ["Comeu só coisa boa", "Comeu catupiry", "Ficou no sol marinando"],
-                        mainImage : "https://res.cloudinary.com/trackfarmcdn/image/upload/v1571528329/mainImages/in-love_tytozp.png",
-                        metrica : "Sabor"
-                    },
-                    */
-
-                );
-                // f(ingrediente.fornecedor) fornecedores.push(ingrediente.fornecedor);
-                // ("#ingredientes").append(IngredientesTemplates.item(ingrediente));
-                //$("#ingredientes").append(StoryTellingTemplates.step(item));
+                steps.push(item);
+                if(ingrediente.fornecedor) fornecedores.push(ingrediente.fornecedor);
+                $("#ingredientes").append(IngredientesTemplates.item(ingrediente));
+                $("#ingredientes").append(StoryTellingTemplates.step(item));
             }
 
             setStep(true);
