@@ -42,7 +42,8 @@ services:
       - hackingrio
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d
-      - ./project/front-app/:/www
+      - ./project/site/:/www
+      - ./project/front-app/:/www/app
 
 networks:
   hackingrio: {}

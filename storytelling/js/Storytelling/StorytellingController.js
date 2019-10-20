@@ -7,7 +7,7 @@ const StoryTellingController = (function(){
     const init = function(){
 
         const url = new URL(location.href);
-        const lote = url.searchParams.get("lote");
+        const lote = url.searchParams.get("ingrediente");
         if(!lote){
             $("#step").html(TemplateGlobal.itemNaoEncontrado());
             return;
