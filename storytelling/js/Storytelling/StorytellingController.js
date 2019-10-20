@@ -27,7 +27,7 @@ const StoryTellingController = (function(){
                 "processos": []
             }); 
 
-            $("#nomeIngrediente").html(url.searchParams.get("nome")+ "/ ");
+            $("#nomeIngrediente").html(url.searchParams.get("nome"));
 
 
             setStep(true);
