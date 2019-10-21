@@ -25,8 +25,8 @@ Entre em mais detalhes sobre seu produto, levantando pontos positivos, o porquê
 #### Instalação
 
 ```sh
-$ git clone http://github.com/hackingrio/alimentacao-2019-farm.git
-$ cd alimentacao-2019-farm
+$ git clone http://github.com/fredericowu/farmtrack.git
+$ cd farmtrack
 $ cp envs/docker .env
 $ docker-compose up
 ```
