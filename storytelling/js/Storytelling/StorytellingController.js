@@ -56,9 +56,11 @@ const StoryTellingController = (function(){
         if(stepNum == (steps.length - 1)){
             $(".next-btn").hide();
             $(".resetSession-btn").show();
+            $("#nomeIngrediente").hide();
         }else{
             $(".next-btn").show();
             $(".resetSession-btn").hide();
+            $("#nomeIngrediente").show();
         }
 
         let step = steps[stepNum];
