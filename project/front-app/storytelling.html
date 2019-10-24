@@ -25,14 +25,10 @@
 </head>
 
 <body id="page-top" class="storytelling animated fadeIn">
-    <div class="container-fluid mt-2">
-        <div class="row">
-            <div class="col-12">
-                <button class="btn float-right btn-sm btn-outline-dark" onclick="window.history.back()">VOLTAR</button>
-            </div>
-        </div>
-    </div>
-    
+    <nav class="navbar navbar-light bg-success">
+        <a class="navbar-brand text-white" style="font-weight: 700; margin-left: 20px" href="#">Farm Track <small class="text-dark" style="font-weight: 700" id="empresa"></small></a> <span class="text-white" style="position: absolute; cursor: pointer;" onclick="window.history.back()"><span class="fas fa-arrow-left" style="cursor:pointer"></span></span>
+    </nav>
+
     <div class="container mt-3">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -57,7 +53,7 @@
         </div>
     
 
-    <div class="container-fluid" style="position: fixed; bottom: 10px">
+    <div class="container-fluid bg-white" style="position: fixed; bottom: 0px; background: #fff; padding-top: 7px; height: 55px">
         <div class="row">
             <div class="col-2">
                 <button class="btn btn-warning prev-btn" onclick="StoryTellingController.prev()"><span class="fas fa-arrow-left"></span></button>
