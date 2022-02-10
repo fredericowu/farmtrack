@@ -1,7 +1,7 @@
 django-cors-headers==3.1.1
 certifi==2019.9.11
 chardet==3.0.4
-Django==2.2.6
+Django==2.2.27
 django-jet==1.0.8
 djangorestframework==3.10.3
 idna==2.8
